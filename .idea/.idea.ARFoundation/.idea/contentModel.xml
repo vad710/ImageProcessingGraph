@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="ARFoundation.sln" t="IncludeFlat" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="ArrayCounter.cs" t="Include" />
+          <e p="ConvertToPixels.cs" t="Include" />
+          <e p="Editor" t="Include">
+            <e p="ImageProcessingGraphEditor.cs" t="Include" />
+            <e p="KernelEditor.cs" t="Include" />
+            <e p="PreviewImageEditor.cs" t="Include" />
+          </e>
+          <e p="Grayscale.cs" t="Include" />
+          <e p="ImageProcessingGraph.cs" t="Include" />
+          <e p="ImageProcessingNode.cs" t="Include" />
+          <e p="Kernel.cs" t="Include" />
+          <e p="Multiply.cs" t="Include" />
+          <e p="PreviewImage.cs" t="Include" />
+          <e p="Texture2DLoader.cs" t="Include" />
+          <e p="xNode" t="Include">
+            <e p="Attributes" t="Include">
+              <e p="NodeEnum.cs" t="Include" />
+            </e>
+            <e p="Editor" t="Include">
+              <e p="Drawers" t="Include">
+                <e p="NodeEnumDrawer.cs" t="Include" />
+              </e>
+              <e p="NodeEditor.cs" t="Include" />
+              <e p="NodeEditorAction.cs" t="Include" />
+              <e p="NodeEditorAssetModProcessor.cs" t="Include" />
+              <e p="NodeEditorBase.cs" t="Include" />
+              <e p="NodeEditorGUI.cs" t="Include" />
+              <e p="NodeEditorGUILayout.cs" t="Include" />
+              <e p="NodeEditorPreferences.cs" t="Include" />
+              <e p="NodeEditorReflection.cs" t="Include" />
+              <e p="NodeEditorResources.cs" t="Include" />
+              <e p="NodeEditorUtilities.cs" t="Include" />
+              <e p="NodeEditorWindow.cs" t="Include" />
+              <e p="NodeGraphEditor.cs" t="Include" />
+              <e p="Resources" t="Include">
+                <e p="ScriptTemplates" t="Include">
+                  <e p="xNode_NodeGraphTemplate.cs.txt" t="Include" />
+                  <e p="xNode_NodeTemplate.cs.txt" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Node.cs" t="Include" />
+            <e p="NodeDataCache.cs" t="Include" />
+            <e p="NodeGraph.cs" t="Include" />
+            <e p="NodePort.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_ARFoundation.940645225.00" t="ExcludeRecursive" />
+  </component>
+</project>
