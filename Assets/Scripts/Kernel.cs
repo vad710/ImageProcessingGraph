@@ -6,20 +6,31 @@ using XNode;
 public class Kernel : ImageProcessingNode
 {
     //Vertical Kernel
-    public float[,] kernel = {
-        {-1, -2, -1},
-        { 0,  0,  0},
-        { 1,  2,  1}
-    };
+    public float[,] KernelValues;
     
     [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public EnumerableFloats Values;
     [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public int Width;
     [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public int Height;
+    [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public bool Average;
     [Output] public EnumerableFloats Results;
-    
-    
-    
-    private IEnumerable<float> RunKernel(IEnumerable<float> values, int width, int height, float[,] kernel)
+
+
+    protected override void Init()
+    {
+        base.Init();
+        
+        if (this.KernelValues == default(float[,]))
+        {
+            this.KernelValues = new float[,]
+            {
+                {-1, -2, -1},
+                {0, 0, 0},
+                {1, 2, 1}
+            };
+        }
+    }
+
+    private IEnumerable<float> RunKernel(IEnumerable<float> values, int width, int height, float[,] kernel, bool doAverage)
     {
         var kernelWidth = kernel.GetLength(0);
         var kernelHeight = kernel.GetLength(1);
@@ -31,6 +42,16 @@ public class Kernel : ImageProcessingNode
         
         var valuesArray = values.ToArray();
         var temp = new float[width * height];
+
+        var kernelTotal = 0f;
+
+        if (doAverage)
+        {
+            foreach (var kernelValue in kernel)
+            {
+                kernelTotal += kernelValue;
+            }
+        }
         
         for (var y = yOffset; y < height - yOffset; y++)
         {
@@ -67,7 +88,12 @@ public class Kernel : ImageProcessingNode
                     }
                 }
 
-                var pixel = Mathf.Clamp01(kernelResult);
+                if (doAverage)
+                {
+                    kernelResult = kernelResult / kernelTotal;
+                }
+                
+                var pixel = Mathf.Clamp01(Mathf.Abs(kernelResult));
                 temp[index] = pixel;
                 //yield return pixel;
             }    
@@ -89,10 +115,13 @@ public class Kernel : ImageProcessingNode
         var values = this.GetInputValue("Values", this.Values);
         var width = this.GetInputValue<int>("Width", this.Width);
         var height = this.GetInputValue<int>("Height", this.Height);
-
+        var doAverage = this.GetInputValue<bool>("Average", this.Average);
+        
         if (values != null && values.GetEnumerable() != null)
         {
-            this.Results = new EnumerableFloats(this.RunKernel(values.GetEnumerable(), width, height, kernel));    
+            Debug.Log("About to run kernel with doAverage: " + doAverage);
+            
+            this.Results = new EnumerableFloats(this.RunKernel(values.GetEnumerable(), width, height, this.KernelValues, doAverage));    
         }
     }
 }

@@ -7,12 +7,6 @@ using XNode;
 
 public class ConvertToPixels : ImageProcessingNode {
 
-	// Use this for initialization
-	protected override void Init() {
-		base.Init();
-		
-	}
-
 	[Input(ShowBackingValue.Never, ConnectionType.Override)] public EnumerableFloats RedValues;
 	[Input(ShowBackingValue.Never, ConnectionType.Override)] public EnumerableFloats BlueValues;
 	[Input(ShowBackingValue.Never, ConnectionType.Override)] public EnumerableFloats GreenValues;

@@ -11,6 +11,8 @@ public class PreviewImage : ImageProcessingNode
 	[Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public int Height;
 	[Input(ShowBackingValue.Never, ConnectionType.Override)] public EnumerableColors RGBPixels;
 
+	[Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public bool Crop;
+	
 	public Texture2D Image;
 
 	protected override void Init()
@@ -32,10 +34,11 @@ public class PreviewImage : ImageProcessingNode
 
 	public override void OnNodeUpdated()
 	{
-		//Debug.Log("Render Image Updated!");
+		Debug.Log("Preview image updating...!");
 		
 		var width = this.GetInputValue<int>("Width", this.Width);
 		var height = this.GetInputValue<int>("Height", this.Height);
+		var crop = this.GetInputValue<bool>("Crop", this.Crop);
 
 		this.Image = new Texture2D(width, height);
 		
@@ -49,10 +52,32 @@ public class PreviewImage : ImageProcessingNode
 
             if (pixels != null)
             {
-	            Debug.Log("Pixel Count " + pixels.Length);
+	            //Debug.Log("Pixel Count " + pixels.Length);
 	            
                 this.Image.SetPixels(pixels );
+
+                if (crop)
+                {
+	                Debug.Log("Cropping...");
+	                
+	                var cropWidth = 250;
+	                var cropHeight = 250;
+	                
+	                var croppedImage = new Texture2D(cropWidth,cropHeight);
+
+	                var cropX = (this.Image.width) / 2;
+	                var cropY = (this.Image.height) / 2;
+
+	                var croppedPixels = this.Image.GetPixels(cropX, cropY, cropWidth, cropHeight);
+
+	                croppedImage.SetPixels(croppedPixels );
+	                this.Image = croppedImage;
+                }
+                
+                
                 this.Image.Apply();
+                
+                
             }    
         }
 	}

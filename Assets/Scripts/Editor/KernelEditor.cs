@@ -12,7 +12,8 @@ public class KernelEditor : NodeEditor
         NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("Values"));
         NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("Width"));
         NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("Height"));
-        NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("Results"));
+        
+        NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("Average"));
 
 //        var rect = UnityEditor.EditorGUILayout.GetControlRect(false, 170);
 //        var node = target as PreviewImage;
@@ -26,24 +27,29 @@ public class KernelEditor : NodeEditor
         var node = target as Kernel;
         if (node != null)
         {
-            var kernel = node.kernel;
-                   
-           var kernelWidth = kernel.GetLength(0);
-           var kernelHeight = kernel.GetLength(1);
+           var kernel = node.KernelValues;
 
-           for (var x = 0; x < kernelWidth; x++)
+           if (kernel != null)
            {
-               GUILayout.BeginHorizontal();
-               
-               for (var y = 0; y < kernelHeight; y++)
+               var kernelWidth = kernel.GetLength(0);
+               var kernelHeight = kernel.GetLength(1);
+
+               for (var x = 0; x < kernelWidth; x++)
                {
-                   GUILayout.BeginVertical();
-                   kernel[y,x] = EditorGUILayout.FloatField( kernel[y,x]);
-                   GUILayout.EndVertical();
-               }
+                   GUILayout.BeginHorizontal();
                
-               GUILayout.EndHorizontal();
-           }  
+                   for (var y = 0; y < kernelHeight; y++)
+                   {
+                       GUILayout.BeginVertical();
+                       kernel[y,x] = EditorGUILayout.FloatField( kernel[y,x]);
+                       GUILayout.EndVertical();
+                   }
+               
+                   GUILayout.EndHorizontal();
+               }                 
+           }
         }
+        
+        NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("Results"));
     }
 }
