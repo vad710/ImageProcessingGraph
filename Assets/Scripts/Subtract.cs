@@ -8,6 +8,7 @@ public class Subtract : ImageProcessingNode
     [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public EnumerableFloats FirstSet;
     [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public EnumerableFloats SecondSet;
     [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public bool Rescale;
+    [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public bool AbsoluteValues;
     
     [Output] public EnumerableFloats Results;
 
@@ -17,7 +18,7 @@ public class Subtract : ImageProcessingNode
         return this.Results;
     }
 
-    private IEnumerable<float> DoSubtraction(IEnumerable<float> firstValues, IEnumerable<float> secondValues, bool rescale)
+    private IEnumerable<float> DoSubtraction(IEnumerable<float> firstValues, IEnumerable<float> secondValues, bool rescale, bool absoluteValues)
     {
 
         var firstValuesArray = firstValues.ToArray();
@@ -39,27 +40,32 @@ public class Subtract : ImageProcessingNode
                 var val = firstValuesArray[i] - secondValuesArray[i];
 
 
+                if (absoluteValues)
+                {
+                    val = Mathf.Abs(val);
+                }
+                
                 if (rescale)
                 {
                     //yield return (val - from_min) * (to_max - to_min) / (from_max - from_min) + to_min;
                     val =  (val - from_min) / 2;
                 }
                 
-                if (val < min)
-                {
-                    min = val;
-                }
-
-                if (val > max)
-                {
-                    max = val;
-                }
+//                if (val < min)
+//                {
+//                    min = val;
+//                }
+//
+//                if (val > max)
+//                {
+//                    max = val;
+//                }
 
                 yield return val;    
             }
         }
         
-        Debug.Log("Min difference: " + min + " max difference: " + max);
+        //Debug.Log("Min difference: " + min + " max difference: " + max);
     }
     
     public override void OnNodeUpdated()
@@ -69,7 +75,8 @@ public class Subtract : ImageProcessingNode
         var firstSet = this.GetInputValue("FirstSet", this.FirstSet);
         var secondSet = this.GetInputValue("SecondSet", this.SecondSet);
         var rescale = this.GetInputValue("Rescale", this.Rescale);
+        var absoluteValues = this.GetInputValue("AbsoluteValues", this.AbsoluteValues);
         
-        this.Results = new EnumerableFloats(this.DoSubtraction(firstSet.GetEnumerable() , secondSet.GetEnumerable(), rescale));
+        this.Results = new EnumerableFloats(this.DoSubtraction(firstSet.GetEnumerable() , secondSet.GetEnumerable(), rescale, absoluteValues));
     }
 }

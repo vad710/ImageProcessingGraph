@@ -24,6 +24,7 @@
           <e p="PreviewImage.cs" t="Include" />
           <e p="Subtract.cs" t="Include" />
           <e p="Texture2DLoader.cs" t="Include" />
+          <e p="Threshold.cs" t="Include" />
           <e p="xNode" t="Include">
             <e p="Attributes" t="Include">
               <e p="NodeEnum.cs" t="Include" />

@@ -1,3 +1,4 @@
+using System.Security.Cryptography;
 using UnityEditor;
 using UnityEngine;
 using XNodeEditor;
@@ -15,41 +16,64 @@ public class KernelEditor : NodeEditor
         
         NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("Average"));
 
-//        var rect = UnityEditor.EditorGUILayout.GetControlRect(false, 170);
-//        var node = target as PreviewImage;
-//
-//        if (node != null && node.Image != null)
-//        {
-//            UnityEditor.EditorGUI.DrawPreviewTexture(rect, node.Image );    
-//        }
         
-        EditorGUILayout.LabelField("Kernel Matrix Values");
+        //NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("Size"));
+        
         var node = target as Kernel;
         if (node != null)
         {
-           var kernel = node.KernelValues;
 
-           if (kernel != null)
-           {
-               var kernelWidth = kernel.GetLength(0);
-               var kernelHeight = kernel.GetLength(1);
+            var selectedSize = (Kernel.KernelSize)EditorGUILayout.EnumPopup("Size", node.Size);
+            if (selectedSize != node.Size)//user is changing the size of the kernel
+            {
+                Debug.Log("changing size of kernel");
 
-               for (var x = 0; x < kernelWidth; x++)
-               {
-                   GUILayout.BeginHorizontal();
-               
-                   for (var y = 0; y < kernelHeight; y++)
-                   {
-                       GUILayout.BeginVertical();
-                       kernel[y,x] = EditorGUILayout.FloatField( kernel[y,x]);
-                       GUILayout.EndVertical();
-                   }
-               
-                   GUILayout.EndHorizontal();
-               }                 
-           }
+                if (selectedSize == Kernel.KernelSize.Three)
+                {
+                    node.KernelValues = node.KernelValues3x3;
+                }
+                else
+                {
+                    node.KernelValues = node.KernelValues5x5;
+                }
+                
+                node.Size = selectedSize;
+            }
+             
+            EditorGUILayout.LabelField("Kernel Matrix Values");
+    
+            var kernel = node.KernelValues;
+    
+            if (kernel != null)
+            {
+                var kernelWidth = kernel.GetLength(0);
+                var kernelHeight = kernel.GetLength(1);
+    
+                for (var x = 0; x < kernelWidth; x++)
+                {
+                    GUILayout.BeginHorizontal();
+                   
+                    for (var y = 0; y < kernelHeight; y++)
+                    {
+                        GUILayout.BeginVertical();
+                        kernel[y,x] = EditorGUILayout.FloatField( kernel[y,x]);
+                        GUILayout.EndVertical();
+                    }
+                   
+                    GUILayout.EndHorizontal();
+                }                 
+            }
+            else
+            {
+                EditorGUILayout.LabelField("Kernel is Null");
+            }
         }
         
         NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("Results"));
+    }
+    
+    public override int GetWidth()
+    {
+        return 300;
     }
 }

@@ -12,6 +12,7 @@ public class PreviewImageEditor : NodeEditor
 {    
     public override void OnBodyGUI() 
     {
+        NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("GrayscalePixels"));
         NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("RGBPixels"));
         NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("Width"));
         NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("Height"));

@@ -8,27 +8,18 @@ public class Kernel : ImageProcessingNode
     //Vertical Kernel
     public float[,] KernelValues;
     
+    public float[,] KernelValues5x5 = new float[5,5];
+    public float[,] KernelValues3x3 = new float[3, 3];
+    
     [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public EnumerableFloats Values;
     [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public int Width;
     [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public int Height;
     [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public bool Average;
+
+    [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public KernelSize Size;
+    
     [Output] public EnumerableFloats Results;
 
-
-    protected override void Init()
-    {
-        base.Init();
-        
-        if (this.KernelValues == default(float[,]))
-        {
-            this.KernelValues = new float[,]
-            {
-                {-1, -2, -1},
-                {0, 0, 0},
-                {1, 2, 1}
-            };
-        }
-    }
 
     private IEnumerable<float> RunKernel(IEnumerable<float> values, int width, int height, float[,] kernel, bool doAverage)
     {
@@ -93,6 +84,7 @@ public class Kernel : ImageProcessingNode
                     kernelResult = kernelResult / kernelTotal;
                 }
                 
+                //if we have negative data, we might be loosing some resolution here...
                 var pixel = Mathf.Clamp01(Mathf.Abs(kernelResult));
                 temp[index] = pixel;
                 //yield return pixel;
@@ -123,6 +115,12 @@ public class Kernel : ImageProcessingNode
             
             this.Results = new EnumerableFloats(this.RunKernel(values.GetEnumerable(), width, height, this.KernelValues, doAverage));    
         }
+    }
+
+    public enum KernelSize
+    {
+        Three = 3,
+        Five = 5
     }
 }
 

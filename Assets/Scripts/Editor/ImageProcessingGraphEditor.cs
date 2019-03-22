@@ -84,39 +84,6 @@ namespace Editor
             
         }
         
-//        private void DetermineNodeUpdateOrder(Dictionary<ImageProcessingNode, int> order, Node startNode,
-//            int level)
-//        {
-//            var imageProcNode = startNode as ImageProcessingNode;
-//
-//            if (imageProcNode != null)
-//            {
-//                
-//                //Has this node already been added to the order?
-//                if (order.ContainsKey(imageProcNode))
-//                {
-//                    //node already added - let's see if we need to change the notification order
-//                    if (level > order[imageProcNode])
-//                    {
-//                        order[imageProcNode] = level; //update to a higher level
-//                    }
-//                }
-//                else
-//                {
-//                    //go ahead and add the node to the dictionary at the current level
-//                    order.Add(imageProcNode, level);
-//                }
-//
-//            
-//                //get all of the output connections of this node
-//                var allOutputConnections = imageProcNode.Outputs.SelectMany(output => output.GetConnections());
-//
-//                foreach (var outputConnection in allOutputConnections)
-//                {
-//                    //this.OnUpdateNode(outputConnection.node);
-//                    DetermineNodeUpdateOrder(order, outputConnection.node, level + 1);
-//                }
-//            }
-//        }
+
     }
 }
