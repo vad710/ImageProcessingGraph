@@ -45,6 +45,7 @@
               <e p="NodeEditorUtilities.cs" t="Include" />
               <e p="NodeEditorWindow.cs" t="Include" />
               <e p="NodeGraphEditor.cs" t="Include" />
+              <e p="RenamePopup.cs" t="Include" />
               <e p="Resources" t="Include">
                 <e p="ScriptTemplates" t="Include">
                   <e p="xNode_NodeGraphTemplate.cs.txt" t="Include" />
@@ -56,6 +57,52 @@
             <e p="NodeDataCache.cs" t="Include" />
             <e p="NodeGraph.cs" t="Include" />
             <e p="NodePort.cs" t="Include" />
+          </e>
+        </e>
+        <e p="xNode" t="Include">
+          <e p="Examples" t="Include">
+            <e p="MathGraph" t="Include">
+              <e p="Editor" t="Include">
+                <e p="MathGraphEditor.cs" t="Include" />
+              </e>
+              <e p="MathGraph.cs" t="Include" />
+              <e p="Nodes" t="Include">
+                <e p="DisplayValue.cs" t="Include" />
+                <e p="Editor" t="Include">
+                  <e p="DisplayValueEditor.cs" t="Include" />
+                </e>
+                <e p="MathNode.cs" t="Include" />
+                <e p="Vector.cs" t="Include" />
+              </e>
+            </e>
+            <e p="RuntimeMathGraph" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="Connection.cs" t="Include" />
+                <e p="NodeDrag.cs" t="Include" />
+                <e p="RuntimeMathGraph.cs" t="Include" />
+                <e p="RuntimeNodes" t="Include">
+                  <e p="UGUIDisplayValue.cs" t="Include" />
+                  <e p="UGUIMathBaseNode.cs" t="Include" />
+                  <e p="UGUIMathNode.cs" t="Include" />
+                  <e p="UGUIVector.cs" t="Include" />
+                </e>
+                <e p="UGUIContextMenu.cs" t="Include" />
+                <e p="UGUIPort.cs" t="Include" />
+                <e p="UGUITooltip.cs" t="Include" />
+              </e>
+            </e>
+            <e p="StateMachine" t="Include">
+              <e p="Editor" t="Include">
+                <e p="StateGraphEditor.cs" t="Include" />
+              </e>
+              <e p="Nodes" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="StateNodeEditor.cs" t="Include" />
+                </e>
+                <e p="StateNode.cs" t="Include" />
+              </e>
+              <e p="StateGraph.cs" t="Include" />
+            </e>
           </e>
         </e>
       </e>

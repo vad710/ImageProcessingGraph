@@ -75,6 +75,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Height
       _node: {fileID: 114063086863786068}
@@ -86,6 +87,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: RGBPixels
       _node: {fileID: 114063086863786068}
@@ -97,6 +99,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Crop
       _node: {fileID: 114063086863786068}
@@ -105,6 +108,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: GrayscalePixels
       _node: {fileID: 114063086863786068}
@@ -113,6 +117,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   Width: 0
   Height: 0
@@ -149,6 +154,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: BlueValues
       _node: {fileID: 114071547360156654}
@@ -160,6 +166,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: GreenValues
       _node: {fileID: 114071547360156654}
@@ -171,6 +178,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: RGBPixels
       _node: {fileID: 114071547360156654}
@@ -182,6 +190,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
 --- !u!114 &114133753711543260
 MonoBehaviour:
@@ -212,6 +221,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: IntensityValues
       _node: {fileID: 114133753711543260}
@@ -241,6 +251,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
 --- !u!114 &114151889635862974
 MonoBehaviour:
@@ -275,6 +286,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Width
       _node: {fileID: 114151889635862974}
@@ -286,6 +298,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Height
       _node: {fileID: 114151889635862974}
@@ -297,6 +310,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Average
       _node: {fileID: 114151889635862974}
@@ -305,6 +319,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Results
       _node: {fileID: 114151889635862974}
@@ -325,6 +340,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Size
       _node: {fileID: 114151889635862974}
@@ -333,6 +349,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   Width: 0
   Height: 0
@@ -369,6 +386,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: BlueValues
       _node: {fileID: 114184882788060370}
@@ -380,6 +398,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: GreenValues
       _node: {fileID: 114184882788060370}
@@ -391,6 +410,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: RGBPixels
       _node: {fileID: 114184882788060370}
@@ -402,6 +422,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
 --- !u!114 &114196015093505774
 MonoBehaviour:
@@ -434,6 +455,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: BlueValues
       _node: {fileID: 114196015093505774}
@@ -445,6 +467,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: GreenValues
       _node: {fileID: 114196015093505774}
@@ -456,6 +479,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: RGBPixels
       _node: {fileID: 114196015093505774}
@@ -467,6 +491,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
 --- !u!114 &114240520241687860
 MonoBehaviour:
@@ -500,6 +525,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Height
       _node: {fileID: 114240520241687860}
@@ -511,6 +537,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: RGBPixels
       _node: {fileID: 114240520241687860}
@@ -522,6 +549,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Crop
       _node: {fileID: 114240520241687860}
@@ -530,6 +558,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: GrayscalePixels
       _node: {fileID: 114240520241687860}
@@ -538,6 +567,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   Width: 1024
   Height: 1024
@@ -573,6 +603,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: YValues
       _node: {fileID: 114243010560036112}
@@ -584,6 +615,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: MagnitudeValues
       _node: {fileID: 114243010560036112}
@@ -601,6 +633,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
 --- !u!114 &114276265870810428
 MonoBehaviour:
@@ -635,6 +668,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Width
       _node: {fileID: 114276265870810428}
@@ -646,6 +680,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Height
       _node: {fileID: 114276265870810428}
@@ -657,6 +692,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Average
       _node: {fileID: 114276265870810428}
@@ -665,6 +701,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Results
       _node: {fileID: 114276265870810428}
@@ -685,6 +722,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Size
       _node: {fileID: 114276265870810428}
@@ -693,6 +731,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   Width: 0
   Height: 0
@@ -730,6 +769,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Height
       _node: {fileID: 114298969699696290}
@@ -741,6 +781,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: RGBPixels
       _node: {fileID: 114298969699696290}
@@ -752,6 +793,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Crop
       _node: {fileID: 114298969699696290}
@@ -760,6 +802,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: GrayscalePixels
       _node: {fileID: 114298969699696290}
@@ -768,6 +811,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   Width: 0
   Height: 0
@@ -804,6 +848,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: BlueValues
       _node: {fileID: 114323684286581244}
@@ -815,6 +860,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: GreenValues
       _node: {fileID: 114323684286581244}
@@ -826,6 +872,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: RGBPixels
       _node: {fileID: 114323684286581244}
@@ -837,6 +884,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
 --- !u!114 &114357045265503756
 MonoBehaviour:
@@ -869,6 +917,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: BlueValues
       _node: {fileID: 114357045265503756}
@@ -880,6 +929,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: GreenValues
       _node: {fileID: 114357045265503756}
@@ -891,6 +941,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: RGBPixels
       _node: {fileID: 114357045265503756}
@@ -902,6 +953,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
 --- !u!114 &114408876658072830
 MonoBehaviour:
@@ -935,6 +987,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Height
       _node: {fileID: 114408876658072830}
@@ -946,6 +999,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: RGBPixels
       _node: {fileID: 114408876658072830}
@@ -957,6 +1011,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Crop
       _node: {fileID: 114408876658072830}
@@ -965,6 +1020,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: GrayscalePixels
       _node: {fileID: 114408876658072830}
@@ -973,6 +1029,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   Width: 2048
   Height: 1024
@@ -1009,6 +1066,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: BlueValues
       _node: {fileID: 114475828153351256}
@@ -1020,6 +1078,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: GreenValues
       _node: {fileID: 114475828153351256}
@@ -1031,6 +1090,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: RGBPixels
       _node: {fileID: 114475828153351256}
@@ -1042,6 +1102,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
 --- !u!114 &114498411576074178
 MonoBehaviour:
@@ -1073,6 +1134,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: YValues
       _node: {fileID: 114498411576074178}
@@ -1084,6 +1146,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: MagnitudeValues
       _node: {fileID: 114498411576074178}
@@ -1101,6 +1164,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
 --- !u!114 &114515365018869898
 MonoBehaviour:
@@ -1115,7 +1179,7 @@ MonoBehaviour:
   m_Name: Kernel
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -8, y: 184}
+  position: {x: -72, y: 184}
   ports:
     keys:
     - Values
@@ -1135,6 +1199,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Width
       _node: {fileID: 114515365018869898}
@@ -1146,6 +1211,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Height
       _node: {fileID: 114515365018869898}
@@ -1157,6 +1223,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Results
       _node: {fileID: 114515365018869898}
@@ -1177,6 +1244,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Average
       _node: {fileID: 114515365018869898}
@@ -1185,6 +1253,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Size
       _node: {fileID: 114515365018869898}
@@ -1193,6 +1262,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   Width: 2048
   Height: 1024
@@ -1230,6 +1300,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Height
       _node: {fileID: 114541637329072074}
@@ -1241,6 +1312,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: RGBPixels
       _node: {fileID: 114541637329072074}
@@ -1252,6 +1324,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Crop
       _node: {fileID: 114541637329072074}
@@ -1260,6 +1333,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: GrayscalePixels
       _node: {fileID: 114541637329072074}
@@ -1268,6 +1342,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   Width: 0
   Height: 0
@@ -1305,6 +1380,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Height
       _node: {fileID: 114571959568817124}
@@ -1316,6 +1392,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: RGBPixels
       _node: {fileID: 114571959568817124}
@@ -1327,6 +1404,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Crop
       _node: {fileID: 114571959568817124}
@@ -1335,6 +1413,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: GrayscalePixels
       _node: {fileID: 114571959568817124}
@@ -1343,6 +1422,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   Width: 0
   Height: 0
@@ -1379,6 +1459,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: BlueValues
       _node: {fileID: 114594388803717894}
@@ -1390,6 +1471,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: GreenValues
       _node: {fileID: 114594388803717894}
@@ -1401,6 +1483,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: RGBPixels
       _node: {fileID: 114594388803717894}
@@ -1412,6 +1495,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
 --- !u!114 &114611906696350334
 MonoBehaviour:
@@ -1446,6 +1530,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Width
       _node: {fileID: 114611906696350334}
@@ -1457,6 +1542,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Height
       _node: {fileID: 114611906696350334}
@@ -1468,6 +1554,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Average
       _node: {fileID: 114611906696350334}
@@ -1476,6 +1563,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Results
       _node: {fileID: 114611906696350334}
@@ -1502,6 +1590,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Size
       _node: {fileID: 114611906696350334}
@@ -1510,6 +1599,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   Width: 2048
   Height: 1024
@@ -1547,6 +1637,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Height
       _node: {fileID: 114617956703169652}
@@ -1558,6 +1649,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: RGBPixels
       _node: {fileID: 114617956703169652}
@@ -1569,6 +1661,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Crop
       _node: {fileID: 114617956703169652}
@@ -1577,6 +1670,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: GrayscalePixels
       _node: {fileID: 114617956703169652}
@@ -1585,6 +1679,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   Width: 2048
   Height: 1024
@@ -1667,6 +1762,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Height
       _node: {fileID: 114736009631688278}
@@ -1723,6 +1819,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: instanceInput_0
       _node: {fileID: 114736009631688278}
@@ -1731,6 +1828,7 @@ MonoBehaviour:
       connections: []
       _direction: 1
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 1
     - _fieldName: My Field
       _node: {fileID: 114736009631688278}
@@ -1739,6 +1837,7 @@ MonoBehaviour:
       connections: []
       _direction: 1
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 1
     - _fieldName: RGBPixels
       _node: {fileID: 114736009631688278}
@@ -1753,6 +1852,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
   texture: {fileID: 2800000, guid: b0b094278b7c248588037512a98a8c7d, type: 3}
   Width: 0
@@ -1789,6 +1889,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Height
       _node: {fileID: 114806283742039488}
@@ -1800,6 +1901,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: RGBPixels
       _node: {fileID: 114806283742039488}
@@ -1811,6 +1913,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Crop
       _node: {fileID: 114806283742039488}
@@ -1819,6 +1922,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: GrayscalePixels
       _node: {fileID: 114806283742039488}
@@ -1827,6 +1931,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   Width: 0
   Height: 0
@@ -1868,6 +1973,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: MultiplyBy
       _node: {fileID: 114809908031803036}
@@ -1876,6 +1982,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Values
       _node: {fileID: 114809908031803036}
@@ -1887,6 +1994,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   MultiplyBy: 3
 --- !u!114 &114843955415116722
@@ -1922,6 +2030,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Width
       _node: {fileID: 114843955415116722}
@@ -1933,6 +2042,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Height
       _node: {fileID: 114843955415116722}
@@ -1944,6 +2054,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Average
       _node: {fileID: 114843955415116722}
@@ -1952,6 +2063,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Results
       _node: {fileID: 114843955415116722}
@@ -1972,6 +2084,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Size
       _node: {fileID: 114843955415116722}
@@ -1980,6 +2093,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   Width: 0
   Height: 10
@@ -2016,6 +2130,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: BlueValues
       _node: {fileID: 114844376590772254}
@@ -2027,6 +2142,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: GreenValues
       _node: {fileID: 114844376590772254}
@@ -2038,6 +2154,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: RGBPixels
       _node: {fileID: 114844376590772254}
@@ -2049,6 +2166,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
 --- !u!114 &114854373440666992
 MonoBehaviour:
@@ -2081,6 +2199,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: BlueValues
       _node: {fileID: 114854373440666992}
@@ -2092,6 +2211,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: GreenValues
       _node: {fileID: 114854373440666992}
@@ -2103,6 +2223,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: RGBPixels
       _node: {fileID: 114854373440666992}
@@ -2114,6 +2235,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
 --- !u!114 &114875127386127850
 MonoBehaviour:
@@ -2147,6 +2269,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Height
       _node: {fileID: 114875127386127850}
@@ -2158,6 +2281,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: RGBPixels
       _node: {fileID: 114875127386127850}
@@ -2169,6 +2293,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Crop
       _node: {fileID: 114875127386127850}
@@ -2177,6 +2302,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: GrayscalePixels
       _node: {fileID: 114875127386127850}
@@ -2185,6 +2311,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   Width: 1024
   Height: 1024
@@ -2223,6 +2350,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Width
       _node: {fileID: 114878958552975546}
@@ -2234,6 +2362,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Height
       _node: {fileID: 114878958552975546}
@@ -2245,6 +2374,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Average
       _node: {fileID: 114878958552975546}
@@ -2253,6 +2383,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Results
       _node: {fileID: 114878958552975546}
@@ -2261,6 +2392,7 @@ MonoBehaviour:
       connections: []
       _direction: 1
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Size
       _node: {fileID: 114878958552975546}
@@ -2269,6 +2401,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   Width: 0
   Height: 0
@@ -2306,6 +2439,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Height
       _node: {fileID: 114960345515060078}
@@ -2317,6 +2451,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: RGBPixels
       _node: {fileID: 114960345515060078}
@@ -2328,6 +2463,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Crop
       _node: {fileID: 114960345515060078}
@@ -2336,6 +2472,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: GrayscalePixels
       _node: {fileID: 114960345515060078}
@@ -2344,6 +2481,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   Width: 0
   Height: 0

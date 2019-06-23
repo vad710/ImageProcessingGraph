@@ -28,11 +28,6 @@ public class PreviewImage : ImageProcessingNode
 		base.Init();
 	}
 
-	// Return the correct value of an output port when requested
-	public override object GetValue(NodePort port) {
-		return null; // Replace this
-	}
-
 	public override void OnNodeUpdated()
 	{
 		Debug.Log("Preview image updating...!");
@@ -89,7 +84,7 @@ public class PreviewImage : ImageProcessingNode
 				var croppedImage = new Texture2D(cropWidth,cropHeight);
 
 				var cropX = (this.Image.width) / 3;
-				var cropY = ((this.Image.height) / 5) * 4;
+				var cropY = ((this.Image.height) / 5);
 
 				var croppedPixels = this.Image.GetPixels(cropX, cropY, cropWidth, cropHeight);
 

@@ -25,7 +25,7 @@ namespace XNodeEditor {
 
         public static bool GetAttrib<T>(object[] attribs, out T attribOut) where T : Attribute {
             for (int i = 0; i < attribs.Length; i++) {
-                if (attribs[i].GetType() == typeof(T)) {
+                if (attribs[i] is T){
                     attribOut = attribs[i] as T;
                     return true;
                 }
@@ -36,16 +36,14 @@ namespace XNodeEditor {
 
         public static bool GetAttrib<T>(Type classType, string fieldName, out T attribOut) where T : Attribute {
             // If we can't find field in the first run, it's probably a private field in a base class.
-            FieldInfo field = classType.GetField(fieldName, BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
-            // Search base classes for private fields only. Public fields are found above
-            while (field == null && (classType = classType.BaseType) != typeof(XNode.Node)) field = classType.GetField(fieldName, BindingFlags.NonPublic | BindingFlags.Instance);
+            FieldInfo field = NodeEditorWindow.GetFieldInfo(classType, fieldName);
             // This shouldn't happen. Ever.
             if (field == null) {
                 Debug.LogWarning("Field " + fieldName + " couldnt be found");
                 attribOut = null;
                 return false;
             }
-            object[] attribs = field.GetCustomAttributes(typeof(T), false);
+            object[] attribs = field.GetCustomAttributes(typeof(T), true);
             return GetAttrib(attribs, out attribOut);
         }
 
