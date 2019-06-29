@@ -16,7 +16,7 @@ namespace Editor
         }
         
 
-        private void DoOnUpdateNode(Node node)
+        private void DoOnUpdateNode(ImageProcessingNode node)
         {
             var updateOrder = new LinkedList<ImageProcessingNode>();
             
@@ -38,10 +38,19 @@ namespace Editor
             Debug.Log("Notified a total of " + notifications + " nodes");
         }
 
+        public void ManualUpdateNotification(ImageProcessingNode node)
+        {
+            DoOnUpdateNode(node);
+        }
+        
         private void OnUpdateNode(Node node)
         {
-            //this.nodeToUpdate = node;
-            DoOnUpdateNode(node);
+            var imageProcNode = node as ImageProcessingNode;
+            
+            if (imageProcNode != null && !imageProcNode.ManualUpdate)
+            {
+                DoOnUpdateNode(imageProcNode);    
+            }
         }
 
         private void DetermineNodeUpdateOrder(LinkedList<ImageProcessingNode> order, Node startNode)

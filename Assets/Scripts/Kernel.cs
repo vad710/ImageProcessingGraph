@@ -5,6 +5,11 @@ public class Kernel : ImageProcessingNode
 {
     [Output] public KernelValue kernel;
 
+    public Kernel()
+    {
+        this.ManualUpdate = true;
+    }
+    
     public override object GetValue(NodePort port)
     {
         return this.kernel;

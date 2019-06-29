@@ -1,3 +1,4 @@
+using Editor;
 using UnityEditor;
 using UnityEngine;
 using XNodeEditor;
@@ -59,8 +60,25 @@ public class KernelEditor : NodeEditor
             }
         }
         
+        if (GUILayout.Button("Apply"))
+        {
+            this.NotifyNodes();
+        }
+        
         NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("kernel"));
     }
+
+    private void NotifyNodes()
+    {
+        var imageProcGraphEditor = this.window.graphEditor as ImageProcessingGraphEditor;
+        
+        if (imageProcGraphEditor != null)
+        {
+            imageProcGraphEditor.ManualUpdateNotification(this.target as ImageProcessingNode);
+        }
+    }
+
+
     public override int GetWidth()
     {
         return 300;

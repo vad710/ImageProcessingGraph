@@ -7,10 +7,13 @@ using XNode;
 public abstract class ImageProcessingNode : Node
 {
 
+    public bool ManualUpdate { get; protected set; }
+    
     public virtual void OnNodeUpdated()
     {
         
     }
+    
 }
 
 [Serializable]

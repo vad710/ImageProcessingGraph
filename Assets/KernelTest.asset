@@ -13,12 +13,42 @@ MonoBehaviour:
   m_Name: KernelTest
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: 114903692259866710}
   - {fileID: 114435950148410360}
   - {fileID: 114531079688690474}
   - {fileID: 114426414357073902}
   - {fileID: 114656643231648034}
   - {fileID: 114593779230248668}
+  - {fileID: 114296489202827256}
+--- !u!114 &114296489202827256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b4fd16a16762d54db9e0d94e3db45c1, type: 3}
+  m_Name: Kernel
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -440, y: -120}
+  ports:
+    keys:
+    - kernel
+    values:
+    - _fieldName: kernel
+      _node: {fileID: 114296489202827256}
+      _typeQualifiedName: KernelValue, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Kernel
+        node: {fileID: 114435950148410360}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
 --- !u!114 &114426414357073902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,7 +169,7 @@ MonoBehaviour:
         PublicKeyToken=null
       connections:
       - fieldName: kernel
-        node: {fileID: 114903692259866710}
+        node: {fileID: 114296489202827256}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -228,7 +258,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  texture: {fileID: 2800000, guid: b0b094278b7c248588037512a98a8c7d, type: 3}
+  texture: {fileID: 2800000, guid: dbca7c90c5773414bb19b478773f49b0, type: 3}
   Width: 0
   Height: 0
 --- !u!114 &114593779230248668
@@ -391,33 +421,3 @@ MonoBehaviour:
   Height: 0
   Crop: 0
   Image: {fileID: 0}
---- !u!114 &114903692259866710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b4fd16a16762d54db9e0d94e3db45c1, type: 3}
-  m_Name: Kernel
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: -152, y: -120}
-  ports:
-    keys:
-    - kernel
-    values:
-    - _fieldName: kernel
-      _node: {fileID: 114903692259866710}
-      _typeQualifiedName: KernelValue, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: Kernel
-        node: {fileID: 114435950148410360}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
