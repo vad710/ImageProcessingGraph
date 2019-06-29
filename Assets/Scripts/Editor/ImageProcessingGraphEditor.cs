@@ -9,31 +9,17 @@ namespace Editor
     [CustomNodeGraphEditor(typeof(ImageProcessingGraph))]
     public class ImageProcessingGraphEditor : NodeGraphEditor
     {
-
-        //private Node nodeToUpdate;
-        
         public ImageProcessingGraphEditor()
         {
             NodeEditor.onUpdateNode += OnUpdateNode;
             
         }
-
-//        public override void OnGUI()
-//        {
-//
-//            if (this.nodeToUpdate != null)
-//            {
-//                DoOnUpdateNode(this.nodeToUpdate);
-//                this.nodeToUpdate = null;
-//            }
-//            
-//            base.OnGUI();
-//        }
+        
 
         private void DoOnUpdateNode(Node node)
         {
             var updateOrder = new LinkedList<ImageProcessingNode>();
-
+            
             DetermineNodeUpdateOrder(updateOrder,node);
 
             var notifications = 0;

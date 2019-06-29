@@ -24,13 +24,13 @@ public class Subtract : ImageProcessingNode
         var firstValuesArray = firstValues.ToArray();
         var secondValuesArray = secondValues.ToArray();
 
-        var max = float.MinValue;
-        var min = float.MaxValue;
+//        var max = float.MinValue;
+//        var min = float.MaxValue;
         
         const float from_min = -1f;
-        const float from_max = 1f;
-        const float to_min = 0;
-        const float to_max = 1;
+//        const float from_max = 1f;
+//        const float to_min = 0;
+//        const float to_max = 1;
         
         
         if (firstValuesArray.Length == secondValuesArray.Length)

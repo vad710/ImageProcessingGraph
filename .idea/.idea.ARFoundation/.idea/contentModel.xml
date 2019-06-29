@@ -13,12 +13,14 @@
           <e p="Editor" t="Include">
             <e p="ConvolutionEditor.cs" t="Include" />
             <e p="ImageProcessingGraphEditor.cs" t="Include" />
+            <e p="KernelEditor.cs" t="Include" />
             <e p="PreviewImageEditor.cs" t="Include" />
           </e>
           <e p="Extrema.cs" t="Include" />
           <e p="Grayscale.cs" t="Include" />
           <e p="ImageProcessingGraph.cs" t="Include" />
           <e p="ImageProcessingNode.cs" t="Include" />
+          <e p="Kernel.cs" t="Include" />
           <e p="Magnitude.cs" t="Include" />
           <e p="Multiply.cs" t="Include" />
           <e p="PreviewImage.cs" t="Include" />
