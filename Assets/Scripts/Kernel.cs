@@ -19,15 +19,32 @@ public class Kernel : ImageProcessingNode
 [Serializable]
 public class KernelValue
 {
-    public static float[,] KernelValues5x5 = new float[5,5];
-    public static float[,] KernelValues3x3 = new float[3, 3];
-
+    private readonly float[,] kernelValues5X5 = new float[,] {{1,1,1,1,1}, {1,1,1,1,1}, {1,1,1,1,1}, {1,1,1,1,1}, {1,1,1,1,1}};
+    private readonly float[,] kernelValues3X3 = new float[,] {{1,1,1}, {1,1,1}, {1,1,1}};
+    
     public KernelValue()
     {
-        this.Values = KernelValues3x3;
+        this.Values = kernelValues3X3;
+    }
+
+    public void SetKernelSize(KernelSize size)
+    {
+        if (this.Size != size)
+        {
+            if (size == KernelSize.Five)
+            {
+                this.Values = kernelValues5X5;
+            }
+            else
+            {
+                this.Values = kernelValues3X3;
+            }
+            
+            this.Size = size;
+        }
     }
     
-    public KernelSize Size { get; set; }
+    public KernelSize Size { get; private set; }
 
     public float[,] Values { get; set; }
     

@@ -109,12 +109,13 @@ public class Convolution : ImageProcessingNode
         var width = this.GetInputValue<int>("Width", this.Width);
         var height = this.GetInputValue<int>("Height", this.Height);
         var doAverage = this.GetInputValue<bool>("Average", this.Average);
+        var kernel = this.GetInputValue<KernelValue>("Kernel", this.Kernel);
         
         if (values != null && values.GetEnumerable() != null)
         {
             Debug.Log("About to run kernel with doAverage: " + doAverage);
             
-            this.Results = new EnumerableFloats(this.RunKernel(values.GetEnumerable(), width, height, this.Kernel.Values, doAverage));    
+            this.Results = new EnumerableFloats(this.RunKernel(values.GetEnumerable(), width, height, kernel.Values, doAverage));    
         }
     }
 

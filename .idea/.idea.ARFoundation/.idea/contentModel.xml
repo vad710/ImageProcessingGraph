@@ -17,6 +17,7 @@
           </e>
           <e p="Extrema.cs" t="Include" />
           <e p="Grayscale.cs" t="Include" />
+          <e p="Harris.cs" t="Include" />
           <e p="ImageProcessingGraph.cs" t="Include" />
           <e p="ImageProcessingNode.cs" t="Include" />
           <e p="Kernel.cs" t="Include" />

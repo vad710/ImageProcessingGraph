@@ -17,18 +17,7 @@ public class KernelEditor : NodeEditor
             {
                 Debug.Log("changing size of kernel");
                 
-                
-                //TODO: can we push this logic into the KernelValue class?
-                if (selectedSize == KernelValue.KernelSize.Three)
-                {
-                    node.kernel.Values = KernelValue.KernelValues3x3;
-                }
-                else
-                {
-                    node.kernel.Values = KernelValue.KernelValues5x5;
-                }
-                
-                node.kernel.Size = selectedSize;
+                node.kernel.SetKernelSize(selectedSize);
             }
             
             EditorGUILayout.LabelField("Kernel Matrix Values");
