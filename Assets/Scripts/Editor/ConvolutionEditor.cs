@@ -3,8 +3,8 @@ using UnityEditor;
 using UnityEngine;
 using XNodeEditor;
 
-[CustomNodeEditor(typeof(Kernel))]
-public class KernelEditor : NodeEditor
+[CustomNodeEditor(typeof(Convolution))]
+public class ConvolutionEditor : NodeEditor
 {
     private float firstValue;
     
@@ -19,16 +19,16 @@ public class KernelEditor : NodeEditor
         
         //NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("Size"));
         
-        var node = target as Kernel;
+        var node = target as Convolution;
         if (node != null)
         {
 
-            var selectedSize = (Kernel.KernelSize)EditorGUILayout.EnumPopup("Size", node.Size);
+            var selectedSize = (Convolution.KernelSize)EditorGUILayout.EnumPopup("Size", node.Size);
             if (selectedSize != node.Size)//user is changing the size of the kernel
             {
                 Debug.Log("changing size of kernel");
 
-                if (selectedSize == Kernel.KernelSize.Three)
+                if (selectedSize == Convolution.KernelSize.Three)
                 {
                     node.KernelValues = node.KernelValues3x3;
                 }

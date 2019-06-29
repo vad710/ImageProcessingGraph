@@ -3,9 +3,9 @@ using System.Linq;
 using UnityEngine;
 using XNode;
 
-public class Kernel : ImageProcessingNode
+public class Convolution : ImageProcessingNode
 {
-    //Vertical Kernel
+    //Vertical Convolution
     public float[,] KernelValues;
     
     public float[,] KernelValues5x5 = new float[5,5];

@@ -15,6 +15,10 @@ MonoBehaviour:
   nodes:
   - {fileID: 114271836945011706}
   - {fileID: 114140560625509526}
+  - {fileID: 114995206461094756}
+  - {fileID: 114162524736129800}
+  - {fileID: 114958678326006324}
+  - {fileID: 114172027413543390}
 --- !u!114 &114140560625509526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28,7 +32,7 @@ MonoBehaviour:
   m_Name: Preview Image
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -120, y: 88}
+  position: {x: -248, y: 184}
   ports:
     keys:
     - Width
@@ -95,6 +99,132 @@ MonoBehaviour:
   Height: 0
   Crop: 0
   Image: {fileID: 0}
+--- !u!114 &114162524736129800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f0bffad1ce764a7282caa31baff5733, type: 3}
+  m_Name: Grayscale
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -296, y: -8}
+  ports:
+    keys:
+    - RGBPixels
+    - IntensityValues
+    values:
+    - _fieldName: RGBPixels
+      _node: {fileID: 114162524736129800}
+      _typeQualifiedName: EnumerableColors, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: RGBPixels
+        node: {fileID: 114271836945011706}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: IntensityValues
+      _node: {fileID: 114162524736129800}
+      _typeQualifiedName: EnumerableFloats, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: GrayscalePixels
+        node: {fileID: 114958678326006324}
+        reroutePoints: []
+      - fieldName: Values
+        node: {fileID: 114995206461094756}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+--- !u!114 &114172027413543390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f539ec05e19a646afb87ba8805168670, type: 3}
+  m_Name: Preview Image
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 398.50458, y: 148.31226}
+  ports:
+    keys:
+    - Width
+    - Height
+    - RGBPixels
+    - GrayscalePixels
+    - Crop
+    values:
+    - _fieldName: Width
+      _node: {fileID: 114172027413543390}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Width
+        node: {fileID: 114271836945011706}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Height
+      _node: {fileID: 114172027413543390}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Height
+        node: {fileID: 114271836945011706}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: RGBPixels
+      _node: {fileID: 114172027413543390}
+      _typeQualifiedName: EnumerableColors, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: GrayscalePixels
+      _node: {fileID: 114172027413543390}
+      _typeQualifiedName: EnumerableFloats, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Results
+        node: {fileID: 114995206461094756}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Crop
+      _node: {fileID: 114172027413543390}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Width: 0
+  Height: 0
+  Crop: 0
+  Image: {fileID: 0}
 --- !u!114 &114271836945011706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,6 +253,9 @@ MonoBehaviour:
       - fieldName: RGBPixels
         node: {fileID: 114140560625509526}
         reroutePoints: []
+      - fieldName: RGBPixels
+        node: {fileID: 114162524736129800}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -134,6 +267,15 @@ MonoBehaviour:
       connections:
       - fieldName: Width
         node: {fileID: 114140560625509526}
+        reroutePoints: []
+      - fieldName: Width
+        node: {fileID: 114958678326006324}
+        reroutePoints: []
+      - fieldName: Width
+        node: {fileID: 114995206461094756}
+        reroutePoints: []
+      - fieldName: Width
+        node: {fileID: 114172027413543390}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -147,10 +289,192 @@ MonoBehaviour:
       - fieldName: Height
         node: {fileID: 114140560625509526}
         reroutePoints: []
+      - fieldName: Height
+        node: {fileID: 114958678326006324}
+        reroutePoints: []
+      - fieldName: Height
+        node: {fileID: 114995206461094756}
+        reroutePoints: []
+      - fieldName: Height
+        node: {fileID: 114172027413543390}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  texture: {fileID: 2800000, guid: b0b094278b7c248588037512a98a8c7d, type: 3}
+  texture: {fileID: 2800000, guid: dbca7c90c5773414bb19b478773f49b0, type: 3}
   Width: 0
   Height: 0
+--- !u!114 &114958678326006324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f539ec05e19a646afb87ba8805168670, type: 3}
+  m_Name: Preview Image
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -40, y: -40}
+  ports:
+    keys:
+    - Width
+    - Height
+    - RGBPixels
+    - GrayscalePixels
+    - Crop
+    values:
+    - _fieldName: Width
+      _node: {fileID: 114958678326006324}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Width
+        node: {fileID: 114271836945011706}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Height
+      _node: {fileID: 114958678326006324}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Height
+        node: {fileID: 114271836945011706}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: RGBPixels
+      _node: {fileID: 114958678326006324}
+      _typeQualifiedName: EnumerableColors, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: GrayscalePixels
+      _node: {fileID: 114958678326006324}
+      _typeQualifiedName: EnumerableFloats, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: IntensityValues
+        node: {fileID: 114162524736129800}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Crop
+      _node: {fileID: 114958678326006324}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Width: 0
+  Height: 0
+  Crop: 0
+  Image: {fileID: 0}
+--- !u!114 &114995206461094756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4decb4c14a40432995ee10e0145ff30, type: 3}
+  m_Name: Convolution
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -24, y: 280}
+  ports:
+    keys:
+    - Values
+    - Width
+    - Height
+    - Average
+    - Size
+    - Results
+    values:
+    - _fieldName: Values
+      _node: {fileID: 114995206461094756}
+      _typeQualifiedName: EnumerableFloats, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: IntensityValues
+        node: {fileID: 114162524736129800}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Width
+      _node: {fileID: 114995206461094756}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Width
+        node: {fileID: 114271836945011706}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Height
+      _node: {fileID: 114995206461094756}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Height
+        node: {fileID: 114271836945011706}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Average
+      _node: {fileID: 114995206461094756}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Size
+      _node: {fileID: 114995206461094756}
+      _typeQualifiedName: Convolution+KernelSize, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Results
+      _node: {fileID: 114995206461094756}
+      _typeQualifiedName: EnumerableFloats, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: GrayscalePixels
+        node: {fileID: 114172027413543390}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Width: 0
+  Height: 0
+  Average: 0
+  Size: 3

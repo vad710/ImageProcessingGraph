@@ -277,8 +277,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Size
       _node: {fileID: 114168064942137588}
-      _typeQualifiedName: Kernel+KernelSize, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
+      _typeQualifiedName: Convolution+KernelSize, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 0
       _connectionType: 1
@@ -961,8 +961,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Size
       _node: {fileID: 114776406924377564}
-      _typeQualifiedName: Kernel+KernelSize, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
+      _typeQualifiedName: Convolution+KernelSize, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 0
       _connectionType: 1
