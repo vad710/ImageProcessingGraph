@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="211361d5-c7ed-495a-ac90-ce6eb9c62c6c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/KernelEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/KernelEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Kernel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ARFoundation/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ARFoundation/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ARFoundation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ARFoundation/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DoG.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DoG.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/KernelTest.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KernelTest.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/ImageProcessingGraphEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/ImageProcessingGraphEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Subtract.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Subtract.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Convolution.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Convolution.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/ConvolutionEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/ConvolutionEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sobel.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sobel.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,29 +19,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Convolution.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="10" selection-start-line="10" selection-end-line="11" selection-end-column="54" />
+            <state relative-caret-position="111">
+              <caret line="112" column="8" selection-start-line="112" selection-start-column="8" selection-end-line="112" selection-end-column="8" />
               <folding>
-                <marker date="1561769276307" expanded="true" signature="6:84" ph="..." />
-                <marker date="1561769276307" expanded="true" signature="132:4273" ph="{...}" />
-                <marker date="1561769276307" expanded="true" signature="941:3457" ph="{...}" />
-                <marker date="1561769276307" expanded="true" signature="1355:1495" ph="{...}" />
-                <marker date="1561769276307" expanded="true" signature="1413:1485" ph="{...}" />
-                <marker date="1561769276307" expanded="true" signature="1561:3104" ph="{...}" />
-                <marker date="1561769276307" expanded="true" signature="1631:3090" ph="{...}" />
-                <marker date="1561769276307" expanded="true" signature="1926:2697" ph="{...}" />
-                <marker date="1561769276307" expanded="true" signature="1992:2083" ph="{...}" />
-                <marker date="1561769276307" expanded="true" signature="2161:2679" ph="{...}" />
-                <marker date="1561769276307" expanded="true" signature="2235:2338" ph="{...}" />
-                <marker date="1561769276307" expanded="true" signature="2729:2828" ph="{...}" />
-                <marker date="1561769276307" expanded="true" signature="3114:3430" ph="/* TODO: Go back to using yield return for performance, but need to make sure that we return the correct number o ... */" />
-                <marker date="1561769276307" expanded="true" signature="3509:3550" ph="{...}" />
-                <marker date="1561769276307" expanded="true" signature="3592:4195" ph="{...}" />
-                <marker date="1561769276307" expanded="true" signature="3943:4189" ph="{...}" />
-                <marker date="1561769276307" expanded="true" signature="4223:4271" ph="{...}" />
+                <marker date="1561772334886" expanded="true" signature="6:84" ph="..." />
+                <marker date="1561772334886" expanded="true" signature="132:4382" ph="{...}" />
+                <marker date="1561772334886" expanded="true" signature="139:317" ph="/* Vertical Convolution ... */" />
+                <marker date="1561772334886" expanded="true" signature="1049:3565" ph="{...}" />
+                <marker date="1561772334886" expanded="true" signature="1463:1603" ph="{...}" />
+                <marker date="1561772334886" expanded="true" signature="1521:1593" ph="{...}" />
+                <marker date="1561772334886" expanded="true" signature="1669:3212" ph="{...}" />
+                <marker date="1561772334886" expanded="true" signature="1739:3198" ph="{...}" />
+                <marker date="1561772334886" expanded="true" signature="2034:2805" ph="{...}" />
+                <marker date="1561772334886" expanded="true" signature="2100:2191" ph="{...}" />
+                <marker date="1561772334886" expanded="true" signature="2269:2787" ph="{...}" />
+                <marker date="1561772334886" expanded="true" signature="2343:2446" ph="{...}" />
+                <marker date="1561772334886" expanded="true" signature="2837:2936" ph="{...}" />
+                <marker date="1561772334886" expanded="true" signature="3222:3538" ph="/* TODO: Go back to using yield return for performance, but need to make sure that we return the correct number o ... */" />
+                <marker date="1561772334886" expanded="true" signature="3617:3658" ph="{...}" />
+                <marker date="1561772334886" expanded="true" signature="3700:4304" ph="{...}" />
+                <marker date="1561772334886" expanded="true" signature="4051:4298" ph="{...}" />
+                <marker date="1561772334886" expanded="true" signature="4332:4380" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -92,27 +90,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Editor/ConvolutionEditor.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="71" column="8" lean-forward="true" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="84" />
+            <state relative-caret-position="160">
+              <caret line="16" column="79" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="79" />
               <folding>
-                <marker date="1561769379198" expanded="false" signature="6:92" ph="..." />
-                <marker date="1561769379198" expanded="true" signature="177:2520" ph="{...}" />
-                <marker date="1561769379198" expanded="true" signature="252:2446" ph="{...}" />
-                <marker date="1561769379198" expanded="true" signature="774:2346" ph="{...}" />
-                <marker date="1561769379198" expanded="true" signature="970:1395" ph="{...}" />
-                <marker date="1561769379198" expanded="true" signature="1105:1203" ph="{...}" />
-                <marker date="1561769379198" expanded="true" signature="1224:1322" ph="{...}" />
-                <marker date="1561769379198" expanded="true" signature="1559:2229" ph="{...}" />
-                <marker date="1561769379198" expanded="true" signature="1743:2198" ph="{...}" />
-                <marker date="1561769379198" expanded="true" signature="1889:2113" ph="{...}" />
-                <marker date="1561769379198" expanded="true" signature="2246:2336" ph="{...}" />
-                <marker date="1561769379198" expanded="true" signature="2486:2518" ph="{...}" />
+                <marker date="1561772420306" expanded="false" signature="6:92" ph="..." />
+                <marker date="1561772420306" expanded="true" signature="177:2692" ph="{...}" />
+                <marker date="1561772420306" expanded="true" signature="252:2618" ph="{...}" />
+                <marker date="1561772420306" expanded="true" signature="858:2518" ph="{...}" />
+                <marker date="1561772420306" expanded="true" signature="870:2508" ph="/* var selectedSize = (Convolution.KernelSize)EditorGUILayout.EnumPopup(&quot;Size&quot;, node.Size); ... */" />
+                <marker date="1561772420306" expanded="true" signature="2658:2690" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Editor/ImageProcessingGraphEditor.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="176">
@@ -368,12 +360,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/PreviewImageEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Threshold.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PreviewImage.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Convolution.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/ConvolutionEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Subtract.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/KernelEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Kernel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/ImageProcessingGraphEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Convolution.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/ConvolutionEditor.cs" />
       </list>
     </option>
   </component>
@@ -459,10 +451,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="39343">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="1400">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="39343" />
+      <option name="pid" value="1400" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -488,7 +480,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81044000" />
+    <option name="totallyTimeSpent" value="81530000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -501,9 +493,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1477" height="797" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19295774" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19295774" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -512,7 +503,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.26626506" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.24698795" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.2966226" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -562,6 +553,32 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Convolution.cs</url>
+          <line>116</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Convolution.cs" initialLine="116">
+            <startOffsets>
+              <option value="4162" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4284" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Convolution.cs</url>
+          <line>107</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Convolution.cs" initialLine="107">
+            <startOffsets>
+              <option value="3715" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3770" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1363,32 +1380,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Convolution.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="10" selection-start-line="10" selection-end-line="11" selection-end-column="54" />
-          <folding>
-            <marker date="1561769276307" expanded="true" signature="6:84" ph="..." />
-            <marker date="1561769276307" expanded="true" signature="132:4273" ph="{...}" />
-            <marker date="1561769276307" expanded="true" signature="941:3457" ph="{...}" />
-            <marker date="1561769276307" expanded="true" signature="1355:1495" ph="{...}" />
-            <marker date="1561769276307" expanded="true" signature="1413:1485" ph="{...}" />
-            <marker date="1561769276307" expanded="true" signature="1561:3104" ph="{...}" />
-            <marker date="1561769276307" expanded="true" signature="1631:3090" ph="{...}" />
-            <marker date="1561769276307" expanded="true" signature="1926:2697" ph="{...}" />
-            <marker date="1561769276307" expanded="true" signature="1992:2083" ph="{...}" />
-            <marker date="1561769276307" expanded="true" signature="2161:2679" ph="{...}" />
-            <marker date="1561769276307" expanded="true" signature="2235:2338" ph="{...}" />
-            <marker date="1561769276307" expanded="true" signature="2729:2828" ph="{...}" />
-            <marker date="1561769276307" expanded="true" signature="3114:3430" ph="/* TODO: Go back to using yield return for performance, but need to make sure that we return the correct number o ... */" />
-            <marker date="1561769276307" expanded="true" signature="3509:3550" ph="{...}" />
-            <marker date="1561769276307" expanded="true" signature="3592:4195" ph="{...}" />
-            <marker date="1561769276307" expanded="true" signature="3943:4189" ph="{...}" />
-            <marker date="1561769276307" expanded="true" signature="4223:4271" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Editor/PreviewImageEditor.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
@@ -1401,27 +1392,6 @@
             <marker date="1559321806232" expanded="true" signature="1056:1130" ph="{...}" />
             <marker date="1559321806232" expanded="true" signature="1192:1478" ph="{...}" />
             <marker date="1559321806232" expanded="true" signature="1386:1471" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Editor/ConvolutionEditor.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="71" column="8" lean-forward="true" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="84" />
-          <folding>
-            <marker date="1561769379198" expanded="false" signature="6:92" ph="..." />
-            <marker date="1561769379198" expanded="true" signature="177:2520" ph="{...}" />
-            <marker date="1561769379198" expanded="true" signature="252:2446" ph="{...}" />
-            <marker date="1561769379198" expanded="true" signature="774:2346" ph="{...}" />
-            <marker date="1561769379198" expanded="true" signature="970:1395" ph="{...}" />
-            <marker date="1561769379198" expanded="true" signature="1105:1203" ph="{...}" />
-            <marker date="1561769379198" expanded="true" signature="1224:1322" ph="{...}" />
-            <marker date="1561769379198" expanded="true" signature="1559:2229" ph="{...}" />
-            <marker date="1561769379198" expanded="true" signature="1743:2198" ph="{...}" />
-            <marker date="1561769379198" expanded="true" signature="1889:2113" ph="{...}" />
-            <marker date="1561769379198" expanded="true" signature="2246:2336" ph="{...}" />
-            <marker date="1561769379198" expanded="true" signature="2486:2518" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1497,6 +1467,48 @@
             <marker date="1561772069021" expanded="true" signature="1420:2182" ph="{...}" />
             <marker date="1561772069021" expanded="true" signature="1578:1663" ph="{...}" />
             <marker date="1561772069021" expanded="true" signature="1992:2168" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Editor/ConvolutionEditor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="16" column="79" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="79" />
+          <folding>
+            <marker date="1561772420306" expanded="false" signature="6:92" ph="..." />
+            <marker date="1561772420306" expanded="true" signature="177:2692" ph="{...}" />
+            <marker date="1561772420306" expanded="true" signature="252:2618" ph="{...}" />
+            <marker date="1561772420306" expanded="true" signature="858:2518" ph="{...}" />
+            <marker date="1561772420306" expanded="true" signature="870:2508" ph="/* var selectedSize = (Convolution.KernelSize)EditorGUILayout.EnumPopup(&quot;Size&quot;, node.Size); ... */" />
+            <marker date="1561772420306" expanded="true" signature="2658:2690" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Convolution.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="112" column="8" selection-start-line="112" selection-start-column="8" selection-end-line="112" selection-end-column="8" />
+          <folding>
+            <marker date="1561772334886" expanded="true" signature="6:84" ph="..." />
+            <marker date="1561772334886" expanded="true" signature="132:4382" ph="{...}" />
+            <marker date="1561772334886" expanded="true" signature="139:317" ph="/* Vertical Convolution ... */" />
+            <marker date="1561772334886" expanded="true" signature="1049:3565" ph="{...}" />
+            <marker date="1561772334886" expanded="true" signature="1463:1603" ph="{...}" />
+            <marker date="1561772334886" expanded="true" signature="1521:1593" ph="{...}" />
+            <marker date="1561772334886" expanded="true" signature="1669:3212" ph="{...}" />
+            <marker date="1561772334886" expanded="true" signature="1739:3198" ph="{...}" />
+            <marker date="1561772334886" expanded="true" signature="2034:2805" ph="{...}" />
+            <marker date="1561772334886" expanded="true" signature="2100:2191" ph="{...}" />
+            <marker date="1561772334886" expanded="true" signature="2269:2787" ph="{...}" />
+            <marker date="1561772334886" expanded="true" signature="2343:2446" ph="{...}" />
+            <marker date="1561772334886" expanded="true" signature="2837:2936" ph="{...}" />
+            <marker date="1561772334886" expanded="true" signature="3222:3538" ph="/* TODO: Go back to using yield return for performance, but need to make sure that we return the correct number o ... */" />
+            <marker date="1561772334886" expanded="true" signature="3617:3658" ph="{...}" />
+            <marker date="1561772334886" expanded="true" signature="3700:4304" ph="{...}" />
+            <marker date="1561772334886" expanded="true" signature="4051:4298" ph="{...}" />
+            <marker date="1561772334886" expanded="true" signature="4332:4380" ph="{...}" />
           </folding>
         </state>
       </provider>

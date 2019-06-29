@@ -6,17 +6,18 @@ using XNode;
 public class Convolution : ImageProcessingNode
 {
     //Vertical Convolution
-    public float[,] KernelValues;
-    
-    public float[,] KernelValues5x5 = new float[5,5];
-    public float[,] KernelValues3x3 = new float[3, 3];
+//    public float[,] KernelValues;
+//    
+//    public float[,] KernelValues5x5 = new float[5,5];
+//    public float[,] KernelValues3x3 = new float[3, 3];
     
     [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public EnumerableFloats Values;
     [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public int Width;
     [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public int Height;
     [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public bool Average;
-
-    [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public KernelSize Size;
+    [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public KernelValue Kernel;
+    
+//    [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public KernelSize Size;
     
     [Output] public EnumerableFloats Results;
 
@@ -113,7 +114,7 @@ public class Convolution : ImageProcessingNode
         {
             Debug.Log("About to run kernel with doAverage: " + doAverage);
             
-            this.Results = new EnumerableFloats(this.RunKernel(values.GetEnumerable(), width, height, this.KernelValues, doAverage));    
+            this.Results = new EnumerableFloats(this.RunKernel(values.GetEnumerable(), width, height, this.Kernel.Values, doAverage));    
         }
     }
 

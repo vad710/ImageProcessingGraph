@@ -210,7 +210,7 @@ MonoBehaviour:
     - Height
     - Average
     - Results
-    - Size
+    - Kernel
     values:
     - _fieldName: Values
       _node: {fileID: 114168064942137588}
@@ -275,10 +275,10 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: Size
+    - _fieldName: Kernel
       _node: {fileID: 114168064942137588}
-      _typeQualifiedName: Convolution+KernelSize, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: KernelValue, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
       connections: []
       _direction: 0
       _connectionType: 1
@@ -287,7 +287,6 @@ MonoBehaviour:
   Width: 0
   Height: 0
   Average: 0
-  Size: 3
 --- !u!114 &114261761637668180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -897,7 +896,7 @@ MonoBehaviour:
     - Height
     - Average
     - Results
-    - Size
+    - Kernel
     values:
     - _fieldName: Values
       _node: {fileID: 114776406924377564}
@@ -959,10 +958,10 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: Size
+    - _fieldName: Kernel
       _node: {fileID: 114776406924377564}
-      _typeQualifiedName: Convolution+KernelSize, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: KernelValue, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
       connections: []
       _direction: 0
       _connectionType: 1
@@ -971,7 +970,6 @@ MonoBehaviour:
   Width: 0
   Height: 0
   Average: 0
-  Size: 3
 --- !u!114 &114803288778081070
 MonoBehaviour:
   m_ObjectHideFlags: 0

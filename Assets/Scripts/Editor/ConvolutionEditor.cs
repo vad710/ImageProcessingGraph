@@ -3,7 +3,7 @@ using UnityEditor;
 using UnityEngine;
 using XNodeEditor;
 
-[CustomNodeEditor(typeof(Convolution))]
+//[CustomNodeEditor(typeof(Convolution))]
 public class ConvolutionEditor : NodeEditor
 {
     private float firstValue;
@@ -14,6 +14,7 @@ public class ConvolutionEditor : NodeEditor
         NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("Width"));
         NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("Height"));
         
+        NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("Kernel"));
         NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("Average"));
 
         
@@ -23,50 +24,50 @@ public class ConvolutionEditor : NodeEditor
         if (node != null)
         {
 
-            var selectedSize = (Convolution.KernelSize)EditorGUILayout.EnumPopup("Size", node.Size);
-            if (selectedSize != node.Size)//user is changing the size of the kernel
-            {
-                Debug.Log("changing size of kernel");
-
-                if (selectedSize == Convolution.KernelSize.Three)
-                {
-                    node.KernelValues = node.KernelValues3x3;
-                }
-                else
-                {
-                    node.KernelValues = node.KernelValues5x5;
-                }
-                
-                node.Size = selectedSize;
-            }
-             
-            EditorGUILayout.LabelField("Kernel Matrix Values");
-    
-            var kernel = node.KernelValues;
-    
-            if (kernel != null)
-            {
-                var kernelWidth = kernel.GetLength(0);
-                var kernelHeight = kernel.GetLength(1);
-    
-                for (var x = 0; x < kernelWidth; x++)
-                {
-                    GUILayout.BeginHorizontal();
-                   
-                    for (var y = 0; y < kernelHeight; y++)
-                    {
-                        GUILayout.BeginVertical();
-                        kernel[y,x] = EditorGUILayout.FloatField( kernel[y,x]);
-                        GUILayout.EndVertical();
-                    }
-                   
-                    GUILayout.EndHorizontal();
-                }                 
-            }
-            else
-            {
-                EditorGUILayout.LabelField("Kernel is Null");
-            }
+//            var selectedSize = (Convolution.KernelSize)EditorGUILayout.EnumPopup("Size", node.Size);
+//            if (selectedSize != node.Size)//user is changing the size of the kernel
+//            {
+//                Debug.Log("changing size of kernel");
+//
+//                if (selectedSize == Convolution.KernelSize.Three)
+//                {
+//                    node.KernelValues = node.KernelValues3x3;
+//                }
+//                else
+//                {
+//                    node.KernelValues = node.KernelValues5x5;
+//                }
+//                
+//                node.Size = selectedSize;
+//            }
+//             
+//            EditorGUILayout.LabelField("Kernel Matrix Values");
+//    
+//            var kernel = node.KernelValues;
+//    
+//            if (kernel != null)
+//            {
+//                var kernelWidth = kernel.GetLength(0);
+//                var kernelHeight = kernel.GetLength(1);
+//    
+//                for (var x = 0; x < kernelWidth; x++)
+//                {
+//                    GUILayout.BeginHorizontal();
+//                   
+//                    for (var y = 0; y < kernelHeight; y++)
+//                    {
+//                        GUILayout.BeginVertical();
+//                        kernel[y,x] = EditorGUILayout.FloatField( kernel[y,x]);
+//                        GUILayout.EndVertical();
+//                    }
+//                   
+//                    GUILayout.EndHorizontal();
+//                }                 
+//            }
+//            else
+//            {
+//                EditorGUILayout.LabelField("Kernel is Null");
+//            }
         }
         
         NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("Results"));
