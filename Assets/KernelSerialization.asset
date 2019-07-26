@@ -14,7 +14,75 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes:
   - {fileID: 114517870042190632}
-  - {fileID: 114712178505474960}
+  - {fileID: 114434099902934782}
+--- !u!114 &114434099902934782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f539ec05e19a646afb87ba8805168670, type: 3}
+  m_Name: Preview Image
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 88, y: -136}
+  ports:
+    keys:
+    - Width
+    - Height
+    - RGBPixels
+    - GrayscalePixels
+    values:
+    - _fieldName: Width
+      _node: {fileID: 114434099902934782}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Width
+        node: {fileID: 114517870042190632}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Height
+      _node: {fileID: 114434099902934782}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Height
+        node: {fileID: 114517870042190632}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: RGBPixels
+      _node: {fileID: 114434099902934782}
+      _typeQualifiedName: EnumerableColors, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: RGBPixels
+        node: {fileID: 114517870042190632}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: GrayscalePixels
+      _node: {fileID: 114434099902934782}
+      _typeQualifiedName: EnumerableFloats, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Width: 0
+  Height: 0
 --- !u!114 &114517870042190632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28,7 +96,7 @@ MonoBehaviour:
   m_Name: Texture2D Loader
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 792, y: 744}
+  position: {x: -264, y: -168}
   ports:
     keys:
     - RGBPixels
@@ -41,7 +109,7 @@ MonoBehaviour:
         PublicKeyToken=null
       connections:
       - fieldName: RGBPixels
-        node: {fileID: 114712178505474960}
+        node: {fileID: 114434099902934782}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -53,7 +121,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: Width
-        node: {fileID: 114712178505474960}
+        node: {fileID: 114434099902934782}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -65,91 +133,18 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: Height
-        node: {fileID: 114712178505474960}
+        node: {fileID: 114434099902934782}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  texture: {fileID: 2800000, guid: b0b094278b7c248588037512a98a8c7d, type: 3}
+  texture: {fileID: 2800000, guid: dbca7c90c5773414bb19b478773f49b0, type: 3}
   Width: 0
   Height: 0
---- !u!114 &114712178505474960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f539ec05e19a646afb87ba8805168670, type: 3}
-  m_Name: Preview Image
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 1176, y: 744}
-  ports:
-    keys:
-    - Width
-    - Height
-    - RGBPixels
-    - GrayscalePixels
-    - Crop
-    values:
-    - _fieldName: Width
-      _node: {fileID: 114712178505474960}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: Width
-        node: {fileID: 114517870042190632}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: Height
-      _node: {fileID: 114712178505474960}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: Height
-        node: {fileID: 114517870042190632}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: RGBPixels
-      _node: {fileID: 114712178505474960}
-      _typeQualifiedName: EnumerableColors, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: RGBPixels
-        node: {fileID: 114517870042190632}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: GrayscalePixels
-      _node: {fileID: 114712178505474960}
-      _typeQualifiedName: EnumerableFloats, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: Crop
-      _node: {fileID: 114712178505474960}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-  Width: 0
-  Height: 0
-  Crop: 0
+  Crop: 1
+  CropRect:
+    x: 335
+    y: 1630
+    width: 250
+    height: 250

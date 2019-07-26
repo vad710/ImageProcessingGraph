@@ -14,6 +14,7 @@
             <e p="ImageProcessingGraphEditor.cs" t="Include" />
             <e p="KernelEditor.cs" t="Include" />
             <e p="PreviewImageEditor.cs" t="Include" />
+            <e p="Texture2DLoaderEditor.cs" t="Include" />
           </e>
           <e p="Extrema.cs" t="Include" />
           <e p="Grayscale.cs" t="Include" />

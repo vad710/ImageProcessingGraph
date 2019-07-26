@@ -12,8 +12,7 @@ public class PreviewImage : ImageProcessingNode
 	[Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public int Height;
 	[Input(ShowBackingValue.Never, ConnectionType.Override)] public EnumerableColors RGBPixels;
 	[Input(ShowBackingValue.Never, ConnectionType.Override)] public EnumerableFloats GrayscalePixels;
-
-	[Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public bool Crop;
+	
 	
 	[NonSerialized]
 	public Texture2D Image;
@@ -45,7 +44,6 @@ public class PreviewImage : ImageProcessingNode
 		
 		var width = this.GetInputValue<int>("Width", this.Width);
 		var height = this.GetInputValue<int>("Height", this.Height);
-		var crop = this.GetInputValue<bool>("Crop", this.Crop);
 
 		var grayscale = this.GetInputValue<EnumerableFloats>("GrayscalePixels");
 		var colors = this.GetInputValue<EnumerableColors>("RGBPixels");
@@ -96,27 +94,6 @@ public class PreviewImage : ImageProcessingNode
             
 			this.Image.SetPixels(pixelBuffer );
 
-			if (crop)
-			{
-				//TODO: This is really inefficient!
-				
-				Debug.Log("Cropping...");
-                
-				var cropWidth = 250;
-				var cropHeight = 250;
-                
-				var croppedImage = new Texture2D(cropWidth,cropHeight);
-
-				var cropX = (this.Image.width) / 3;
-				var cropY = ((this.Image.height) / 5);
-
-				var croppedPixels = this.Image.GetPixels(cropX, cropY, cropWidth, cropHeight);
-
-				croppedImage.SetPixels(croppedPixels );
-				this.Image = croppedImage;
-			}
-            
-            
 			this.Image.Apply();
 			this.IsValid = true;
 		}

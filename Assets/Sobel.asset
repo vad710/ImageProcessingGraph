@@ -62,7 +62,6 @@ MonoBehaviour:
     - Width
     - Height
     - RGBPixels
-    - Crop
     - GrayscalePixels
     values:
     - _fieldName: Width
@@ -101,15 +100,6 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: Crop
-      _node: {fileID: 114063086863786068}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: GrayscalePixels
       _node: {fileID: 114063086863786068}
       _typeQualifiedName: EnumerableFloats, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -121,7 +111,6 @@ MonoBehaviour:
       _dynamic: 0
   Width: 0
   Height: 0
-  Crop: 0
 --- !u!114 &114071547360156654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -513,7 +502,6 @@ MonoBehaviour:
     - Width
     - Height
     - RGBPixels
-    - Crop
     - GrayscalePixels
     values:
     - _fieldName: Width
@@ -552,15 +540,6 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: Crop
-      _node: {fileID: 114240520241687860}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: GrayscalePixels
       _node: {fileID: 114240520241687860}
       _typeQualifiedName: EnumerableFloats, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -572,7 +551,6 @@ MonoBehaviour:
       _dynamic: 0
   Width: 1024
   Height: 1024
-  Crop: 1
 --- !u!114 &114243010560036112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -758,7 +736,6 @@ MonoBehaviour:
     - Width
     - Height
     - RGBPixels
-    - Crop
     - GrayscalePixels
     values:
     - _fieldName: Width
@@ -797,15 +774,6 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: Crop
-      _node: {fileID: 114298969699696290}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: GrayscalePixels
       _node: {fileID: 114298969699696290}
       _typeQualifiedName: EnumerableFloats, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -817,7 +785,6 @@ MonoBehaviour:
       _dynamic: 0
   Width: 0
   Height: 0
-  Crop: 0
 --- !u!114 &114323684286581244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -975,7 +942,6 @@ MonoBehaviour:
     - Width
     - Height
     - RGBPixels
-    - Crop
     - GrayscalePixels
     values:
     - _fieldName: Width
@@ -1014,15 +980,6 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: Crop
-      _node: {fileID: 114408876658072830}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: GrayscalePixels
       _node: {fileID: 114408876658072830}
       _typeQualifiedName: EnumerableFloats, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -1034,7 +991,6 @@ MonoBehaviour:
       _dynamic: 0
   Width: 2048
   Height: 1024
-  Crop: 0
 --- !u!114 &114475828153351256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1289,7 +1245,6 @@ MonoBehaviour:
     - Width
     - Height
     - RGBPixels
-    - Crop
     - GrayscalePixels
     values:
     - _fieldName: Width
@@ -1328,15 +1283,6 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: Crop
-      _node: {fileID: 114541637329072074}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: GrayscalePixels
       _node: {fileID: 114541637329072074}
       _typeQualifiedName: EnumerableFloats, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -1348,7 +1294,6 @@ MonoBehaviour:
       _dynamic: 0
   Width: 0
   Height: 0
-  Crop: 0
 --- !u!114 &114571959568817124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1368,7 +1313,6 @@ MonoBehaviour:
     - Width
     - Height
     - RGBPixels
-    - Crop
     - GrayscalePixels
     values:
     - _fieldName: Width
@@ -1407,15 +1351,6 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: Crop
-      _node: {fileID: 114571959568817124}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: GrayscalePixels
       _node: {fileID: 114571959568817124}
       _typeQualifiedName: EnumerableFloats, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -1427,7 +1362,6 @@ MonoBehaviour:
       _dynamic: 0
   Width: 0
   Height: 0
-  Crop: 0
 --- !u!114 &114594388803717894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1626,7 +1560,6 @@ MonoBehaviour:
     - Width
     - Height
     - RGBPixels
-    - Crop
     - GrayscalePixels
     values:
     - _fieldName: Width
@@ -1665,15 +1598,6 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: Crop
-      _node: {fileID: 114617956703169652}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: GrayscalePixels
       _node: {fileID: 114617956703169652}
       _typeQualifiedName: EnumerableFloats, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -1685,7 +1609,6 @@ MonoBehaviour:
       _dynamic: 0
   Width: 2048
   Height: 1024
-  Crop: 0
 --- !u!114 &114736009631688278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1858,6 +1781,12 @@ MonoBehaviour:
   texture: {fileID: 2800000, guid: dbca7c90c5773414bb19b478773f49b0, type: 3}
   Width: 0
   Height: 0
+  Crop: 0
+  CropRect:
+    x: 0
+    y: 0
+    width: 250
+    height: 250
 --- !u!114 &114806283742039488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1877,7 +1806,6 @@ MonoBehaviour:
     - Width
     - Height
     - RGBPixels
-    - Crop
     - GrayscalePixels
     values:
     - _fieldName: Width
@@ -1916,15 +1844,6 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: Crop
-      _node: {fileID: 114806283742039488}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: GrayscalePixels
       _node: {fileID: 114806283742039488}
       _typeQualifiedName: EnumerableFloats, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -1936,7 +1855,6 @@ MonoBehaviour:
       _dynamic: 0
   Width: 0
   Height: 0
-  Crop: 0
 --- !u!114 &114809908031803036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2258,7 +2176,6 @@ MonoBehaviour:
     - Width
     - Height
     - RGBPixels
-    - Crop
     - GrayscalePixels
     values:
     - _fieldName: Width
@@ -2297,15 +2214,6 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: Crop
-      _node: {fileID: 114875127386127850}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: GrayscalePixels
       _node: {fileID: 114875127386127850}
       _typeQualifiedName: EnumerableFloats, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -2317,7 +2225,6 @@ MonoBehaviour:
       _dynamic: 0
   Width: 1024
   Height: 1024
-  Crop: 1
 --- !u!114 &114878958552975546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2429,7 +2336,6 @@ MonoBehaviour:
     - Width
     - Height
     - RGBPixels
-    - Crop
     - GrayscalePixels
     values:
     - _fieldName: Width
@@ -2468,15 +2374,6 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: Crop
-      _node: {fileID: 114960345515060078}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: GrayscalePixels
       _node: {fileID: 114960345515060078}
       _typeQualifiedName: EnumerableFloats, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -2488,4 +2385,3 @@ MonoBehaviour:
       _dynamic: 0
   Width: 0
   Height: 0
-  Crop: 0

@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using UnityEditor;
+﻿using System.IO;
 using UnityEngine;
-using UnityEngine.UI;
 using XNodeEditor;
 
 [CustomNodeEditor(typeof(PreviewImage))]
@@ -19,8 +14,6 @@ public class PreviewImageEditor : NodeEditor
         NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("RGBPixels"));
         NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("Width"));
         NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("Height"));
-        
-        NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("Crop"));
 
         var rect = UnityEditor.EditorGUILayout.GetControlRect(false, 170);
         var node = target as PreviewImage;

@@ -397,6 +397,12 @@ MonoBehaviour:
   texture: {fileID: 2800000, guid: b0b094278b7c248588037512a98a8c7d, type: 3}
   Width: 0
   Height: 0
+  Crop: 0
+  CropRect:
+    x: 0
+    y: 0
+    width: 250
+    height: 250
 --- !u!114 &114593779230248668
 MonoBehaviour:
   m_ObjectHideFlags: 0
