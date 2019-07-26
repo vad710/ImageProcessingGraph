@@ -39,28 +39,10 @@ public class Texture2DLoaderEditor : NodeEditor
             {
                 node.CropRect = EditorGUILayout.RectIntField("Crop Rectangle", node.CropRect);  
                 
-//                if (node.CropRect.x >= 0 && node.CropRect.y >= 0 && node.CropRect.width <= node.texture.width && node.CropRect.height <= node.CropRect.height)
-//                {
-//                    var croppedPixels = node.texture.GetPixels(node.CropRect.x, node.CropRect.y, node.CropRect.width,
-//                        node.CropRect.height);
-//                    //(cropX, cropY, cropWidth, cropHeight);
-//                    
-//                    var croppedImage = new Texture2D(node.CropRect.width, node.CropRect.height);
-//                    
-//                    croppedImage.SetPixels(croppedPixels );
-//                    previewTexture = croppedImage;
-//                }
-//                else
-//                {
-//                    Debug.LogError("Invalid Crop Rect!");
-//                }
-                
             }   
             
             
             var rect = UnityEditor.EditorGUILayout.GetControlRect(false, 170);
-            
-            
             
             UnityEditor.EditorGUI.DrawPreviewTexture(rect, node.PreviewTexture );
         }

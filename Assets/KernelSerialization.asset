@@ -28,7 +28,7 @@ MonoBehaviour:
   m_Name: Preview Image
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 88, y: -136}
+  position: {x: 120, y: -136}
   ports:
     keys:
     - Width

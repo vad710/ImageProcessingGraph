@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -13,8 +14,19 @@ namespace Editor
         {
             NodeEditor.onUpdateNode += OnUpdateNode;
             
+            
+        }
+
+        public override string GetNodeMenuName(Type node)
+        {
+            if (node.IsSubclassOf(typeof(ImageProcessingNode)) ) 
+            {
+                return base.GetNodeMenuName(node);
+            } 
+            return null;
         }
         
+
 
         private void DoOnUpdateNode(ImageProcessingNode node)
         {

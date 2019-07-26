@@ -423,7 +423,6 @@ MonoBehaviour:
     - Height
     - RGBPixels
     - GrayscalePixels
-    - Crop
     values:
     - _fieldName: Width
       _node: {fileID: 114593779230248668}
@@ -470,18 +469,8 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: Crop
-      _node: {fileID: 114593779230248668}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
   Width: 0
   Height: 0
-  Crop: 0
 --- !u!114 &114595665429026824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -558,7 +547,6 @@ MonoBehaviour:
     - Height
     - RGBPixels
     - GrayscalePixels
-    - Crop
     values:
     - _fieldName: Width
       _node: {fileID: 114598830161611148}
@@ -605,18 +593,8 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: Crop
-      _node: {fileID: 114598830161611148}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
   Width: 0
   Height: 0
-  Crop: 0
 --- !u!114 &114621920674199226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -637,7 +615,6 @@ MonoBehaviour:
     - Height
     - RGBPixels
     - GrayscalePixels
-    - Crop
     values:
     - _fieldName: Width
       _node: {fileID: 114621920674199226}
@@ -684,18 +661,8 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: Crop
-      _node: {fileID: 114621920674199226}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
   Width: 0
   Height: 0
-  Crop: 0
 --- !u!114 &114656643231648034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -716,7 +683,6 @@ MonoBehaviour:
     - Height
     - RGBPixels
     - GrayscalePixels
-    - Crop
     values:
     - _fieldName: Width
       _node: {fileID: 114656643231648034}
@@ -763,18 +729,8 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: Crop
-      _node: {fileID: 114656643231648034}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
   Width: 0
   Height: 0
-  Crop: 0
 --- !u!114 &114753794051986872
 MonoBehaviour:
   m_ObjectHideFlags: 0

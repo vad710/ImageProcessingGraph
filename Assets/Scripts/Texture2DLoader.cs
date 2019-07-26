@@ -16,10 +16,11 @@ public class Texture2DLoader : ImageProcessingNode
 
 	[NonSerialized]
 	public Texture2D PreviewTexture;
-	
+
 	protected override void Init()
 	{
 		base.name = "Texture2D Loader";
+		this.PreviewTexture = Texture2D.blackTexture;
 		
 		this.OnNodeUpdated();
 		
@@ -76,6 +77,10 @@ public class Texture2DLoader : ImageProcessingNode
 			this.PreviewTexture.Apply();
 			
 			this.RGBPixels = new EnumerableColors(pixels);	
+		}
+		else
+		{
+			this.texture = Texture2D.blackTexture;
 		}
 	}
 
