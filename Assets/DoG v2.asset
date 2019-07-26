@@ -45,17 +45,33 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   kernel:
-    Size: 3
+    Size: 5
     _internalValues:
     - 1
     - 1
     - 1
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
 --- !u!114 &114318095005602904
 MonoBehaviour:
   m_ObjectHideFlags: 0
