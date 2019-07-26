@@ -9,6 +9,9 @@ public class KernelEditor : NodeEditor
 {
     public override void OnBodyGUI()
     {
+        // Update serialized object's representation
+        serializedObject.Update();
+        
         var node = target as Kernel;
         if (node != null)
         {
@@ -55,6 +58,9 @@ public class KernelEditor : NodeEditor
         }
         
         NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("kernel"));
+        
+        // Apply property modifications
+        serializedObject.ApplyModifiedProperties();
     }
 
     private void NotifyNodes()
