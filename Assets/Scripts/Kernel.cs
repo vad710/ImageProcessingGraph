@@ -26,7 +26,8 @@ public class KernelValue
     {
         this.Values = kernelValues3X3;
     }
-
+    
+    
     public void SetKernelSize(KernelSize size)
     {
         if (this.Size != size)
@@ -45,9 +46,10 @@ public class KernelValue
     }
     
     public KernelSize Size { get; private set; }
-
+    
     public float[,] Values { get; set; }
     
+    [Serializable]
     public enum KernelSize
     {
         Three = 3,

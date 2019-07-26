@@ -1600,7 +1600,7 @@ MonoBehaviour:
       _dynamic: 0
   Width: 2048
   Height: 1024
-  Average: 1
+  Average: 0
 --- !u!114 &114617956703169652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1850,7 +1850,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  texture: {fileID: 2800000, guid: 7ef06dfd59c1648d2b19b5acea036fb5, type: 3}
+  texture: {fileID: 2800000, guid: dbca7c90c5773414bb19b478773f49b0, type: 3}
   Width: 0
   Height: 0
 --- !u!114 &114806283742039488

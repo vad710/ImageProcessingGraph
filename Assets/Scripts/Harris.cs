@@ -35,6 +35,12 @@ public class Harris : ImageProcessingNode
             // Ix² = Ix . Ix
             // Iy² = Iy . Iy
             // Ixy = Ix . Iy
+
+            if ((iY[i] > 1 || iY[i] < 0) || iX[i] > 1 || iX[i] < 0)
+            {
+                //Debug.Log("Large value");
+            }
+            
             
             var iXSquare = iX[i] * iX[i];
             var iYSquare = iY[i] * iY[i];
@@ -57,11 +63,7 @@ public class Harris : ImageProcessingNode
             
             // harris = det(M)-k*(trace(M)^2)
             corners[i] = determinant - kTraceSquared;
-
-            if (corners[i] > 1)
-            {
-                Debug.Log("Large value");
-            }
+            
             
             //TODO: Threshold Here!
             

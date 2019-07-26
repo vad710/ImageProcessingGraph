@@ -28,7 +28,7 @@ public class Convolution : ImageProcessingNode
         var kernelHeight = kernel.GetLength(1);
         var kernelCenter = Mathf.FloorToInt(kernelWidth / 2f);
 
-
+        //TODO: These offsets are wrong for any kernels larger than 3
         var xOffset = kernel.GetLength(0) - 1;
         var yOffset = kernel.GetLength(1) - 1;
         
@@ -86,9 +86,8 @@ public class Convolution : ImageProcessingNode
                 }
                 
                 //if we have negative data, we might be loosing some resolution here...
-                var pixel = Mathf.Clamp01(Mathf.Abs(kernelResult));
-                temp[index] = pixel;
-                //yield return pixel;
+                //var kernelResult = Mathf.Clamp01(Mathf.Abs(kernelResult));
+                temp[index] = kernelResult;
             }    
         }
 
