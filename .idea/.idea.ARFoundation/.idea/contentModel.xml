@@ -17,6 +17,7 @@
             <e p="Texture2DLoaderEditor.cs" t="Include" />
           </e>
           <e p="Extrema.cs" t="Include" />
+          <e p="GaussianKernel.cs" t="Include" />
           <e p="Grayscale.cs" t="Include" />
           <e p="Harris.cs" t="Include" />
           <e p="ImageProcessingGraph.cs" t="Include" />
