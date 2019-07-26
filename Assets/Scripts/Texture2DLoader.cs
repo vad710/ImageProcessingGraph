@@ -16,6 +16,8 @@ public class Texture2DLoader : ImageProcessingNode
 	{
 		base.name = "Texture2D Loader";
 		
+		this.OnNodeUpdated();
+		
 		base.Init();
 	}
 	

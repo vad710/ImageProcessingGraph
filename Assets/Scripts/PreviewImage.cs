@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -14,14 +15,19 @@ public class PreviewImage : ImageProcessingNode
 
 	[Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public bool Crop;
 	
+	[NonSerialized]
 	public Texture2D Image;
+
+	[NonSerialized] 
+	public bool IsValid;
+	
 
 	protected override void Init()
 	{
 
-		if (this.Image != null)
+		if (this.Image == null)
 		{
-			this.Image = Texture2D.blackTexture;	
+			this.RefreshPreviewImage();	
 		}
 		this.name = "Preview Image";
 		
@@ -30,17 +36,32 @@ public class PreviewImage : ImageProcessingNode
 
 	public override void OnNodeUpdated()
 	{
+		this.RefreshPreviewImage();
+	}
+
+	private void RefreshPreviewImage()
+	{
 		Debug.Log("Preview image updating...!");
 		
 		var width = this.GetInputValue<int>("Width", this.Width);
 		var height = this.GetInputValue<int>("Height", this.Height);
 		var crop = this.GetInputValue<bool>("Crop", this.Crop);
 
-		this.Image = new Texture2D(width, height);
-		
 		var grayscale = this.GetInputValue<EnumerableFloats>("GrayscalePixels");
 		var colors = this.GetInputValue<EnumerableColors>("RGBPixels");
+		
+		if (height == 0 || width == 0 || (grayscale == null && colors == null))
+		{
+			Debug.Log("Input data is invalid");
 
+			this.IsValid = false;
+			this.Image = null;
+			return;
+		}
+
+		
+		this.Image = new Texture2D(width, height);	
+		
 		Color[] pixelBuffer;
 		
 		if (grayscale != null && grayscale.GetEnumerable() != null)
@@ -58,24 +79,27 @@ public class PreviewImage : ImageProcessingNode
 			}                
 		}
 		else if (colors != null && colors.GetEnumerable() != null)
-        {
-	        Debug.Log("Getting rgb pixels...");
+		{
+			Debug.Log("Getting rgb pixels...");
 	        
-            pixelBuffer = colors.GetEnumerable().ToArray();
-        }
+			pixelBuffer = colors.GetEnumerable().ToArray();
+		}
 		else
 		{
+			Debug.Log("No pixel data available from source...");
 			pixelBuffer = new Color[0];
 		}
 
 		if (pixelBuffer.Length > 0)
 		{
-			//Debug.Log("Pixel Count " + pixels.Length);
+			
             
 			this.Image.SetPixels(pixelBuffer );
 
 			if (crop)
 			{
+				//TODO: This is really inefficient!
+				
 				Debug.Log("Cropping...");
                 
 				var cropWidth = 250;
@@ -94,9 +118,8 @@ public class PreviewImage : ImageProcessingNode
             
             
 			this.Image.Apply();
-			   
+			this.IsValid = true;
 		}
-
 	}
 }
 

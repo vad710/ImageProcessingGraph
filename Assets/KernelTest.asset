@@ -122,6 +122,9 @@ MonoBehaviour:
   Width: 0
   Height: 0
   Average: 0
+  Kernel:
+    Size: 0
+    _internalValues: []
 --- !u!114 &114296489202827256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,6 +155,9 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+  kernel:
+    Size: 0
+    _internalValues: []
 --- !u!114 &114426414357073902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -299,6 +305,9 @@ MonoBehaviour:
   Width: 0
   Height: 0
   Average: 0
+  Kernel:
+    Size: 0
+    _internalValues: []
 --- !u!114 &114531079688690474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -467,7 +476,6 @@ MonoBehaviour:
   Width: 0
   Height: 0
   Crop: 0
-  Image: {fileID: 0}
 --- !u!114 &114595665429026824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -603,7 +611,6 @@ MonoBehaviour:
   Width: 0
   Height: 0
   Crop: 0
-  Image: {fileID: 0}
 --- !u!114 &114621920674199226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -683,7 +690,6 @@ MonoBehaviour:
   Width: 0
   Height: 0
   Crop: 0
-  Image: {fileID: 0}
 --- !u!114 &114656643231648034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -763,7 +769,6 @@ MonoBehaviour:
   Width: 0
   Height: 0
   Crop: 0
-  Image: {fileID: 0}
 --- !u!114 &114753794051986872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -794,3 +799,6 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+  kernel:
+    Size: 0
+    _internalValues: []
