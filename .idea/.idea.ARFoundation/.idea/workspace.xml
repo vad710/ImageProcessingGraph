@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="211361d5-c7ed-495a-ac90-ce6eb9c62c6c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ARFoundation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ARFoundation/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DoG v2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DoG v2.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Convolution.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Convolution.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,27 +18,25 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Convolution.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="74" column="39" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="39" />
+            <state relative-caret-position="695">
+              <caret line="85" column="9" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
               <folding>
-                <marker date="1564261889028" expanded="true" signature="6:84" ph="..." />
-                <marker date="1564261889028" expanded="true" signature="132:4604" ph="{...}" />
-                <marker date="1564261889028" expanded="true" signature="774:3715" ph="{...}" />
-                <marker date="1564261889028" expanded="true" signature="1328:1468" ph="{...}" />
-                <marker date="1564261889028" expanded="true" signature="1386:1458" ph="{...}" />
-                <marker date="1564261889028" expanded="true" signature="1534:3362" ph="{...}" />
-                <marker date="1564261889028" expanded="true" signature="1604:3348" ph="{...}" />
-                <marker date="1564261889028" expanded="true" signature="1892:2977" ph="{...}" />
-                <marker date="1564261889028" expanded="true" signature="2021:2210" ph="/* kernelCenterIndex = 2; ... */" />
-                <marker date="1564261889028" expanded="true" signature="2310:2959" ph="{...}" />
-                <marker date="1564261889028" expanded="true" signature="2606:2738" ph="{...}" />
-                <marker date="1564261889028" expanded="true" signature="3009:3108" ph="{...}" />
-                <marker date="1564261889028" expanded="true" signature="3142:3290" ph="/* if we have negative data, we might be loosing some resolution here... ... */" />
-                <marker date="1564261889028" expanded="true" signature="3372:3688" ph="/* TODO: Go back to using yield return for performance, but need to make sure that we return the correct number o ... */" />
-                <marker date="1564261889028" expanded="true" signature="3767:3808" ph="{...}" />
-                <marker date="1564261889028" expanded="true" signature="3850:4526" ph="{...}" />
-                <marker date="1564261889028" expanded="true" signature="4278:4520" ph="{...}" />
-                <marker date="1564261889028" expanded="true" signature="4554:4602" ph="{...}" />
+                <marker date="1564262989058" expanded="true" signature="6:84" ph="..." />
+                <marker date="1564262989058" expanded="true" signature="132:3874" ph="{...}" />
+                <marker date="1564262989058" expanded="true" signature="774:2985" ph="{...}" />
+                <marker date="1564262989058" expanded="true" signature="1202:1342" ph="{...}" />
+                <marker date="1564262989058" expanded="true" signature="1260:1332" ph="{...}" />
+                <marker date="1564262989058" expanded="true" signature="1392:2979" ph="{...}" />
+                <marker date="1564262989058" expanded="true" signature="1446:2969" ph="{...}" />
+                <marker date="1564262989058" expanded="true" signature="1769:1960" ph="{...}" />
+                <marker date="1564262989058" expanded="true" signature="1981:2955" ph="{...}" />
+                <marker date="1564262989058" expanded="true" signature="2161:2722" ph="{...}" />
+                <marker date="1564262989058" expanded="true" signature="2354:2700" ph="{...}" />
+                <marker date="1564262989058" expanded="true" signature="2758:2869" ph="{...}" />
+                <marker date="1564262989058" expanded="true" signature="3037:3078" ph="{...}" />
+                <marker date="1564262989058" expanded="true" signature="3120:3796" ph="{...}" />
+                <marker date="1564262989058" expanded="true" signature="3548:3790" ph="{...}" />
+                <marker date="1564262989058" expanded="true" signature="3824:3872" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -431,12 +427,12 @@
       <workItem from="1561331513023" duration="1664000" />
       <workItem from="1561769185516" duration="239000" />
       <workItem from="1564105323678" duration="28639000" />
-      <workItem from="1564260913246" duration="974000" />
+      <workItem from="1564260913246" duration="2075000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121181000" />
+    <option name="totallyTimeSpent" value="122282000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -460,7 +456,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.26626506" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.38325992" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.12187959" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -539,29 +535,16 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Convolution.cs</url>
-          <line>28</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Convolution.cs" initialLine="28">
+          <line>52</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Convolution.cs" initialLine="53">
             <startOffsets>
-              <option value="1046" />
+              <option value="1685" />
             </startOffsets>
             <endOffsets>
-              <option value="1078" />
+              <option value="1769" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="53" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Convolution.cs</url>
-          <line>78</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Convolution.cs" initialLine="79">
-            <startOffsets>
-              <option value="2661" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2712" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="54" />
+          <option name="timeStamp" value="55" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1485,27 +1468,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Convolution.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="74" column="39" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="39" />
+        <state relative-caret-position="695">
+          <caret line="85" column="9" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
           <folding>
-            <marker date="1564261889028" expanded="true" signature="6:84" ph="..." />
-            <marker date="1564261889028" expanded="true" signature="132:4604" ph="{...}" />
-            <marker date="1564261889028" expanded="true" signature="774:3715" ph="{...}" />
-            <marker date="1564261889028" expanded="true" signature="1328:1468" ph="{...}" />
-            <marker date="1564261889028" expanded="true" signature="1386:1458" ph="{...}" />
-            <marker date="1564261889028" expanded="true" signature="1534:3362" ph="{...}" />
-            <marker date="1564261889028" expanded="true" signature="1604:3348" ph="{...}" />
-            <marker date="1564261889028" expanded="true" signature="1892:2977" ph="{...}" />
-            <marker date="1564261889028" expanded="true" signature="2021:2210" ph="/* kernelCenterIndex = 2; ... */" />
-            <marker date="1564261889028" expanded="true" signature="2310:2959" ph="{...}" />
-            <marker date="1564261889028" expanded="true" signature="2606:2738" ph="{...}" />
-            <marker date="1564261889028" expanded="true" signature="3009:3108" ph="{...}" />
-            <marker date="1564261889028" expanded="true" signature="3142:3290" ph="/* if we have negative data, we might be loosing some resolution here... ... */" />
-            <marker date="1564261889028" expanded="true" signature="3372:3688" ph="/* TODO: Go back to using yield return for performance, but need to make sure that we return the correct number o ... */" />
-            <marker date="1564261889028" expanded="true" signature="3767:3808" ph="{...}" />
-            <marker date="1564261889028" expanded="true" signature="3850:4526" ph="{...}" />
-            <marker date="1564261889028" expanded="true" signature="4278:4520" ph="{...}" />
-            <marker date="1564261889028" expanded="true" signature="4554:4602" ph="{...}" />
+            <marker date="1564262989058" expanded="true" signature="6:84" ph="..." />
+            <marker date="1564262989058" expanded="true" signature="132:3874" ph="{...}" />
+            <marker date="1564262989058" expanded="true" signature="774:2985" ph="{...}" />
+            <marker date="1564262989058" expanded="true" signature="1202:1342" ph="{...}" />
+            <marker date="1564262989058" expanded="true" signature="1260:1332" ph="{...}" />
+            <marker date="1564262989058" expanded="true" signature="1392:2979" ph="{...}" />
+            <marker date="1564262989058" expanded="true" signature="1446:2969" ph="{...}" />
+            <marker date="1564262989058" expanded="true" signature="1769:1960" ph="{...}" />
+            <marker date="1564262989058" expanded="true" signature="1981:2955" ph="{...}" />
+            <marker date="1564262989058" expanded="true" signature="2161:2722" ph="{...}" />
+            <marker date="1564262989058" expanded="true" signature="2354:2700" ph="{...}" />
+            <marker date="1564262989058" expanded="true" signature="2758:2869" ph="{...}" />
+            <marker date="1564262989058" expanded="true" signature="3037:3078" ph="{...}" />
+            <marker date="1564262989058" expanded="true" signature="3120:3796" ph="{...}" />
+            <marker date="1564262989058" expanded="true" signature="3548:3790" ph="{...}" />
+            <marker date="1564262989058" expanded="true" signature="3824:3872" ph="{...}" />
           </folding>
         </state>
       </provider>

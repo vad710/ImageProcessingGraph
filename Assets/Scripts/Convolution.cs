@@ -23,16 +23,14 @@ public class Convolution : ImageProcessingNode
         var kernelHeight = kernel.GetLength(1);
         
         var kernelCenterIndex = Mathf.FloorToInt(kernelWidth / 2f);
-        //kernelCenterindex should be 1 for a 3x3 and a 2 for 5x5 
-        
-        
+
+
         var xOffset = kernelCenterIndex;
         var yOffset = kernelCenterIndex; 
         
-        //TODO: Remove this for optimization
         var valuesArray = values.ToArray();
         
-        var temp = new float[width * height];
+        //var temp = new float[width * height];
 
         var kernelTotal = 0f;
 
@@ -44,48 +42,48 @@ public class Convolution : ImageProcessingNode
             }
         }
         
-        for (var y = yOffset; y < height - yOffset; y++)
+        for (var y = 0; y < height; y++)
         {
-            for (var x = xOffset; x < width - xOffset; x++)
+            for (var x = 0; x < width; x++)
             {
                 //the specific pixel value we are working on
                 var index = (y * width) + x;
                 
-
-                var kernelResult = 0f;
-
-                //Apply the kernel...
-                for (var kernelY = 0; kernelY < kernelWidth; kernelY++)
+                //Make sure we are inside of the available area for this convolution
+                if (x < xOffset || x >= (width - xOffset) || y < yOffset || y >= (height - yOffset))
                 {
-                    
-                    var kernelYOffset = kernelY - kernelCenterIndex;
-                    
-                    for (var kernelX = 0; kernelX < kernelHeight; kernelX++)
+                    //Just keep the original value if we are outside of the bounds of the convolution
+                    yield return valuesArray[index];
+                }
+                else
+                {
+                    var kernelResult = 0f;
+
+                    //Apply the kernel...
+                    for (var kernelY = 0; kernelY < kernelWidth; kernelY++)
                     {
-                        var kernelXOffset = kernelX - kernelCenterIndex;
-                        
-                        var kernelIndex = index + (width * kernelYOffset) + (kernelXOffset);
-
-                        kernelResult += valuesArray[kernelIndex] * kernel[kernelX, kernelY];
-
-                    }
-                }
-
-                if (doAverage)
-                {
-                    kernelResult = kernelResult / kernelTotal;
-                }
+                        var kernelYOffset = kernelY - kernelCenterIndex;
                 
-                //if we have negative data, we might be loosing some resolution here...
-                //var kernelResult = Mathf.Clamp01(Mathf.Abs(kernelResult));
-                temp[index] = kernelResult;
-            }    
-        }
+                        for (var kernelX = 0; kernelX < kernelHeight; kernelX++)
+                        {
+                            var kernelXOffset = kernelX - kernelCenterIndex;
+                    
+                            var kernelIndex = index + (width * kernelYOffset) + (kernelXOffset);
 
-        //TODO: Go back to using yield return for performance, but need to make sure that we return the correct number of pixels
-        // simply doing a yield return from within the loop will result in a smaller array than needed due to the fact that the 
-        // kernel does not get applied to the borders of the image
-        return temp;
+                            kernelResult += valuesArray[kernelIndex] * kernel[kernelX, kernelY];
+
+                        }
+                    }
+
+                    if (doAverage)
+                    {
+                        kernelResult = kernelResult / kernelTotal;
+                    }
+                    
+                    yield return kernelResult;
+                }
+            }
+        }
     }
 
     public override object GetValue(NodePort port)
