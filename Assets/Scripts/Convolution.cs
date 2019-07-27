@@ -21,13 +21,17 @@ public class Convolution : ImageProcessingNode
     {
         var kernelWidth = kernel.GetLength(0);
         var kernelHeight = kernel.GetLength(1);
-        var kernelCenter = Mathf.FloorToInt(kernelWidth / 2f);
-
-        //TODO: These offsets are wrong for any kernels larger than 3
-        var xOffset = kernel.GetLength(0) - 1;
-        var yOffset = kernel.GetLength(1) - 1;
         
+        var kernelCenterIndex = Mathf.FloorToInt(kernelWidth / 2f);
+        //kernelCenterindex should be 1 for a 3x3 and a 2 for 5x5 
+        
+        
+        var xOffset = kernelCenterIndex;
+        var yOffset = kernelCenterIndex; 
+        
+        //TODO: Remove this for optimization
         var valuesArray = values.ToArray();
+        
         var temp = new float[width * height];
 
         var kernelTotal = 0f;
@@ -44,33 +48,25 @@ public class Convolution : ImageProcessingNode
         {
             for (var x = xOffset; x < width - xOffset; x++)
             {
+                //the specific pixel value we are working on
                 var index = (y * width) + x;
-
-                var kernelYDirection = 1;
-                var kernelXDirection = 1;
+                
 
                 var kernelResult = 0f;
 
                 //Apply the kernel...
                 for (var kernelY = 0; kernelY < kernelWidth; kernelY++)
                 {
-                    if (kernelY < kernelCenter)
-                    {
-                        kernelYDirection = -1;
-                    }
-
+                    
+                    var kernelYOffset = kernelY - kernelCenterIndex;
+                    
                     for (var kernelX = 0; kernelX < kernelHeight; kernelX++)
                     {
-                        if (kernelX < kernelCenter)
-                        {
-                            kernelXDirection = -1;
-                        }
+                        var kernelXOffset = kernelX - kernelCenterIndex;
                         
-                        var kernelValue = kernel[kernelX, kernelY];
-                        
-                        var kernelIndex = index + (kernelY * width * kernelYDirection) + (kernelX * kernelXDirection);
+                        var kernelIndex = index + (width * kernelYOffset) + (kernelXOffset);
 
-                        kernelResult += valuesArray[kernelIndex] * kernelValue;
+                        kernelResult += valuesArray[kernelIndex] * kernel[kernelX, kernelY];
 
                     }
                 }

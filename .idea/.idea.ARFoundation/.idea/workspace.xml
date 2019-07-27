@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="211361d5-c7ed-495a-ac90-ce6eb9c62c6c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ARFoundation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ARFoundation/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/DoG v2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DoG v2.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Convolution.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Convolution.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GaussianKernel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GaussianKernel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Kernel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Kernel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PreviewImage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PreviewImage.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,30 +17,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Convolution.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="111" selection-start-line="111" selection-end-line="111" />
+            <state relative-caret-position="228">
+              <caret line="74" column="39" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="39" />
               <folding>
-                <marker date="1564258319967" expanded="true" signature="6:84" ph="..." />
-                <marker date="1564258319967" expanded="true" signature="132:4226" ph="{...}" />
-                <marker date="1564258319967" expanded="false" signature="774:3337" ph="{...}" />
-                <marker date="1564258319967" expanded="true" signature="1257:1397" ph="{...}" />
-                <marker date="1564258319967" expanded="true" signature="1315:1387" ph="{...}" />
-                <marker date="1564258319967" expanded="true" signature="1463:2984" ph="{...}" />
-                <marker date="1564258319967" expanded="true" signature="1533:2970" ph="{...}" />
-                <marker date="1564258319967" expanded="true" signature="1828:2599" ph="{...}" />
-                <marker date="1564258319967" expanded="true" signature="1894:1985" ph="{...}" />
-                <marker date="1564258319967" expanded="true" signature="2063:2581" ph="{...}" />
-                <marker date="1564258319967" expanded="true" signature="2137:2240" ph="{...}" />
-                <marker date="1564258319967" expanded="true" signature="2631:2730" ph="{...}" />
-                <marker date="1564258319967" expanded="true" signature="2764:2912" ph="/* if we have negative data, we might be loosing some resolution here... ... */" />
-                <marker date="1564258319967" expanded="true" signature="2994:3310" ph="/* TODO: Go back to using yield return for performance, but need to make sure that we return the correct number o ... */" />
-                <marker date="1564258319967" expanded="true" signature="3389:3430" ph="{...}" />
-                <marker date="1564258319967" expanded="true" signature="3472:4148" ph="{...}" />
-                <marker date="1564258319967" expanded="true" signature="3900:4142" ph="{...}" />
-                <marker date="1564258319967" expanded="true" signature="4176:4224" ph="{...}" />
+                <marker date="1564261889028" expanded="true" signature="6:84" ph="..." />
+                <marker date="1564261889028" expanded="true" signature="132:4604" ph="{...}" />
+                <marker date="1564261889028" expanded="true" signature="774:3715" ph="{...}" />
+                <marker date="1564261889028" expanded="true" signature="1328:1468" ph="{...}" />
+                <marker date="1564261889028" expanded="true" signature="1386:1458" ph="{...}" />
+                <marker date="1564261889028" expanded="true" signature="1534:3362" ph="{...}" />
+                <marker date="1564261889028" expanded="true" signature="1604:3348" ph="{...}" />
+                <marker date="1564261889028" expanded="true" signature="1892:2977" ph="{...}" />
+                <marker date="1564261889028" expanded="true" signature="2021:2210" ph="/* kernelCenterIndex = 2; ... */" />
+                <marker date="1564261889028" expanded="true" signature="2310:2959" ph="{...}" />
+                <marker date="1564261889028" expanded="true" signature="2606:2738" ph="{...}" />
+                <marker date="1564261889028" expanded="true" signature="3009:3108" ph="{...}" />
+                <marker date="1564261889028" expanded="true" signature="3142:3290" ph="/* if we have negative data, we might be loosing some resolution here... ... */" />
+                <marker date="1564261889028" expanded="true" signature="3372:3688" ph="/* TODO: Go back to using yield return for performance, but need to make sure that we return the correct number o ... */" />
+                <marker date="1564261889028" expanded="true" signature="3767:3808" ph="{...}" />
+                <marker date="1564261889028" expanded="true" signature="3850:4526" ph="{...}" />
+                <marker date="1564261889028" expanded="true" signature="4278:4520" ph="{...}" />
+                <marker date="1564261889028" expanded="true" signature="4554:4602" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -51,7 +49,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ImageProcessingNode.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="544">
               <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
               <folding>
                 <marker date="1561773805736" expanded="true" signature="6:79" ph="..." />
@@ -69,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Kernel.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="95" column="12" lean-forward="true" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
+            <state relative-caret-position="1328">
+              <caret line="95" column="12" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
               <folding>
                 <marker date="1564258924502" expanded="false" signature="6:45" ph="..." />
                 <marker date="1564258924502" expanded="true" signature="89:296" ph="{...}" />
@@ -104,18 +102,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GaussianKernel.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="70" column="8" lean-forward="true" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+            <state relative-caret-position="928">
+              <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
               <folding>
-                <marker date="1564257615194" expanded="true" signature="6:64" ph="..." />
-                <marker date="1564257615194" expanded="true" signature="115:2001" ph="{...}" />
-                <marker date="1564257615194" expanded="true" signature="246:286" ph="{...}" />
-                <marker date="1564257615194" expanded="true" signature="328:515" ph="{...}" />
-                <marker date="1564257615194" expanded="true" signature="593:1999" ph="{...}" />
-                <marker date="1564257615194" expanded="true" signature="978:1543" ph="{...}" />
-                <marker date="1564257615194" expanded="true" signature="1076:1532" ph="{...}" />
-                <marker date="1564257615194" expanded="true" signature="1627:1924" ph="{...}" />
-                <marker date="1564257615194" expanded="true" signature="1684:1885" ph="{...}" />
+                <marker date="1564259180864" expanded="true" signature="6:64" ph="..." />
+                <marker date="1564259180864" expanded="true" signature="115:1833" ph="{...}" />
+                <marker date="1564259180864" expanded="true" signature="246:286" ph="{...}" />
+                <marker date="1564259180864" expanded="true" signature="328:515" ph="{...}" />
+                <marker date="1564259180864" expanded="true" signature="593:1831" ph="{...}" />
+                <marker date="1564259180864" expanded="true" signature="978:1543" ph="{...}" />
+                <marker date="1564259180864" expanded="true" signature="1076:1532" ph="{...}" />
+                <marker date="1564259180864" expanded="true" signature="1597:1791" ph="{...}" />
+                <marker date="1564259180864" expanded="true" signature="1654:1781" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -124,7 +122,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grayscale.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
+            <state relative-caret-position="448">
               <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
               <folding>
                 <marker date="1559321806238" expanded="false" signature="6:124" ph="..." />
@@ -143,7 +141,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7AC571C-A2D0-4B2F-981D-0D886FA067CF/8d/407f8538/Array.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
+            <state relative-caret-position="43056">
               <caret line="2695" column="10" selection-start-line="2695" selection-start-column="10" selection-end-line="2695" selection-end-column="10" />
             </state>
           </provider>
@@ -152,7 +150,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PreviewImage.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
+            <state relative-caret-position="992">
               <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
               <folding>
                 <marker date="1564258855681" expanded="true" signature="6:184" ph="..." />
@@ -179,7 +177,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/712D4FD8-31E1-48F0-BA51-24A22B81CAC4/ee/7ec90c30/Color.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
+            <state relative-caret-position="976">
               <caret line="63" column="6" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
             </state>
           </provider>
@@ -188,7 +186,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/712D4FD8-31E1-48F0-BA51-24A22B81CAC4/33/3c0303c0/Texture2D.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
+            <state relative-caret-position="6720">
               <caret line="429" column="6" selection-start-line="429" selection-start-column="6" selection-end-line="429" selection-end-column="6" />
             </state>
           </provider>
@@ -197,7 +195,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1B13BA63-91C7-4847-BBC3-EDDC86DF7EEE/f8/b3202090/Enumerable.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
+            <state relative-caret-position="109600">
               <caret line="6851" column="12" selection-start-line="6851" selection-start-column="12" selection-end-line="6851" selection-end-column="12" />
             </state>
           </provider>
@@ -207,8 +205,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>addnod</find>
-      <find>serializ</find>
       <find>image</find>
       <find>name</find>
       <find>menu</find>
@@ -237,6 +233,8 @@
       <find>xnode</find>
       <find>&quot;xnode&quot;</find>
       <find>child</find>
+      <find>valuesArray</find>
+      <find>index</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -252,6 +250,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/xNode/NodeDataCache.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/xNode/Editor/NodeEditorResources.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/xNode/Editor/NodeEditorWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/xNode/Editor/NodeEditorUtilities.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/xNode/Editor/NodeEditorGUILayout.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/xNode/Editor/NodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
@@ -290,6 +289,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Magnitude.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Extrema.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7AC571C-A2D0-4B2F-981D-0D886FA067CF/02/91a99a84/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Multiply.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ImageProcessingNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7AC571C-A2D0-4B2F-981D-0D886FA067CF/0b/4c22fdc9/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
@@ -337,10 +337,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/KernelEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/ImageProcessingGraphEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/xNode/Editor/NodeEditorWindow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GaussianKernel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Convolution.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PreviewImage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Kernel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GaussianKernel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Convolution.cs" />
       </list>
     </option>
   </component>
@@ -350,46 +350,22 @@
     </ignored-facets>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="2566" />
-    <option name="height" value="1446" />
+    <option name="width" value="2568" />
+    <option name="height" value="1448" />
   </component>
   <component name="ProjectView">
     <navigator currentView="UnityExplorer" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="UnityExplorer">
+        <option name="show-hidden-items" value="false" />
+        <option name="show-project-names" value="true" />
+      </pane>
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
       <pane id="AssemblyExplorer" />
-      <pane id="UnityExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-            </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-              <item name="Editor" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Packages" type="4e2708dd:PackagesRoot" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <option name="show-hidden-items" value="false" />
-        <option name="show-project-names" value="true" />
-      </pane>
       <pane id="FileSystemExplorer" />
     </panes>
   </component>
@@ -429,10 +405,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="64668">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="16488">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="64668" />
+      <option name="pid" value="16488" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -454,12 +430,13 @@
       <workItem from="1561331374408" duration="53000" />
       <workItem from="1561331513023" duration="1664000" />
       <workItem from="1561769185516" duration="239000" />
-      <workItem from="1564105323678" duration="26957000" />
+      <workItem from="1564105323678" duration="28639000" />
+      <workItem from="1564260913246" duration="974000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118525000" />
+    <option name="totallyTimeSpent" value="121181000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -474,7 +451,7 @@
     <frame x="-7" y="-7" width="1477" height="797" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19577464" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19859155" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -483,7 +460,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.26626506" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.2701909" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.38325992" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -560,17 +537,56 @@
           </properties>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Convolution.cs</url>
+          <line>28</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Convolution.cs" initialLine="28">
+            <startOffsets>
+              <option value="1046" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1078" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Convolution.cs</url>
+          <line>78</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Convolution.cs" initialLine="79">
+            <startOffsets>
+              <option value="2661" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2712" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="UNITY_DEBUG_RUN_CONFIGURATION">
         <watch expression="firstValuesArray[i]" language="C#" custom="RiderImportsList:" />
         <watch expression="secondValuesArray[i]" language="C#" custom="RiderImportsList:" />
+        <watch expression="valuesArray[kernelIndex-1]" language="C#" custom="RiderImportsList:" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>valuesArray[kernelIndex-1]</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>valuesArray[kernelIndex]</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>secondValuesArray[i]</expression-string>
         <language-id>C#</language-id>
@@ -1467,9 +1483,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Convolution.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="74" column="39" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="39" />
+          <folding>
+            <marker date="1564261889028" expanded="true" signature="6:84" ph="..." />
+            <marker date="1564261889028" expanded="true" signature="132:4604" ph="{...}" />
+            <marker date="1564261889028" expanded="true" signature="774:3715" ph="{...}" />
+            <marker date="1564261889028" expanded="true" signature="1328:1468" ph="{...}" />
+            <marker date="1564261889028" expanded="true" signature="1386:1458" ph="{...}" />
+            <marker date="1564261889028" expanded="true" signature="1534:3362" ph="{...}" />
+            <marker date="1564261889028" expanded="true" signature="1604:3348" ph="{...}" />
+            <marker date="1564261889028" expanded="true" signature="1892:2977" ph="{...}" />
+            <marker date="1564261889028" expanded="true" signature="2021:2210" ph="/* kernelCenterIndex = 2; ... */" />
+            <marker date="1564261889028" expanded="true" signature="2310:2959" ph="{...}" />
+            <marker date="1564261889028" expanded="true" signature="2606:2738" ph="{...}" />
+            <marker date="1564261889028" expanded="true" signature="3009:3108" ph="{...}" />
+            <marker date="1564261889028" expanded="true" signature="3142:3290" ph="/* if we have negative data, we might be loosing some resolution here... ... */" />
+            <marker date="1564261889028" expanded="true" signature="3372:3688" ph="/* TODO: Go back to using yield return for performance, but need to make sure that we return the correct number o ... */" />
+            <marker date="1564261889028" expanded="true" signature="3767:3808" ph="{...}" />
+            <marker date="1564261889028" expanded="true" signature="3850:4526" ph="{...}" />
+            <marker date="1564261889028" expanded="true" signature="4278:4520" ph="{...}" />
+            <marker date="1564261889028" expanded="true" signature="4554:4602" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ImageProcessingNode.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="544">
           <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
           <folding>
             <marker date="1561773805736" expanded="true" signature="6:79" ph="..." />
@@ -1486,125 +1529,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/712D4FD8-31E1-48F0-BA51-24A22B81CAC4/ee/7ec90c30/Color.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="63" column="6" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/712D4FD8-31E1-48F0-BA51-24A22B81CAC4/33/3c0303c0/Texture2D.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="429" column="6" selection-start-line="429" selection-start-column="6" selection-end-line="429" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1B13BA63-91C7-4847-BBC3-EDDC86DF7EEE/f8/b3202090/Enumerable.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="6851" column="12" selection-start-line="6851" selection-start-column="12" selection-end-line="6851" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7AC571C-A2D0-4B2F-981D-0D886FA067CF/8d/407f8538/Array.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="2695" column="10" selection-start-line="2695" selection-start-column="10" selection-end-line="2695" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grayscale.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
-          <folding>
-            <marker date="1559321806238" expanded="false" signature="6:124" ph="..." />
-            <marker date="1559321806238" expanded="true" signature="171:1028" ph="{...}" />
-            <marker date="1559321806238" expanded="true" signature="430:467" ph="{...}" />
-            <marker date="1559321806238" expanded="true" signature="506:814" ph="{...}" />
-            <marker date="1559321806238" expanded="true" signature="697:811" ph="{...}" />
-            <marker date="1559321806238" expanded="true" signature="889:1023" ph="{...}" />
-            <marker date="1559321806238" expanded="true" signature="914:1017" ph="{...}" />
-            <marker date="1559321806238" expanded="true" signature="951:1013" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GaussianKernel.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="70" column="8" lean-forward="true" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
-          <folding>
-            <marker date="1564257615194" expanded="true" signature="6:64" ph="..." />
-            <marker date="1564257615194" expanded="true" signature="115:2001" ph="{...}" />
-            <marker date="1564257615194" expanded="true" signature="246:286" ph="{...}" />
-            <marker date="1564257615194" expanded="true" signature="328:515" ph="{...}" />
-            <marker date="1564257615194" expanded="true" signature="593:1999" ph="{...}" />
-            <marker date="1564257615194" expanded="true" signature="978:1543" ph="{...}" />
-            <marker date="1564257615194" expanded="true" signature="1076:1532" ph="{...}" />
-            <marker date="1564257615194" expanded="true" signature="1627:1924" ph="{...}" />
-            <marker date="1564257615194" expanded="true" signature="1684:1885" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Convolution.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="111" selection-start-line="111" selection-end-line="111" />
-          <folding>
-            <marker date="1564258319967" expanded="true" signature="6:84" ph="..." />
-            <marker date="1564258319967" expanded="true" signature="132:4226" ph="{...}" />
-            <marker date="1564258319967" expanded="false" signature="774:3337" ph="{...}" />
-            <marker date="1564258319967" expanded="true" signature="1257:1397" ph="{...}" />
-            <marker date="1564258319967" expanded="true" signature="1315:1387" ph="{...}" />
-            <marker date="1564258319967" expanded="true" signature="1463:2984" ph="{...}" />
-            <marker date="1564258319967" expanded="true" signature="1533:2970" ph="{...}" />
-            <marker date="1564258319967" expanded="true" signature="1828:2599" ph="{...}" />
-            <marker date="1564258319967" expanded="true" signature="1894:1985" ph="{...}" />
-            <marker date="1564258319967" expanded="true" signature="2063:2581" ph="{...}" />
-            <marker date="1564258319967" expanded="true" signature="2137:2240" ph="{...}" />
-            <marker date="1564258319967" expanded="true" signature="2631:2730" ph="{...}" />
-            <marker date="1564258319967" expanded="true" signature="2764:2912" ph="/* if we have negative data, we might be loosing some resolution here... ... */" />
-            <marker date="1564258319967" expanded="true" signature="2994:3310" ph="/* TODO: Go back to using yield return for performance, but need to make sure that we return the correct number o ... */" />
-            <marker date="1564258319967" expanded="true" signature="3389:3430" ph="{...}" />
-            <marker date="1564258319967" expanded="true" signature="3472:4148" ph="{...}" />
-            <marker date="1564258319967" expanded="true" signature="3900:4142" ph="{...}" />
-            <marker date="1564258319967" expanded="true" signature="4176:4224" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PreviewImage.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
-          <folding>
-            <marker date="1564258855681" expanded="true" signature="6:184" ph="..." />
-            <marker date="1564258855681" expanded="true" signature="233:2628" ph="{...}" />
-            <marker date="1564258855681" expanded="true" signature="715:837" ph="{...}" />
-            <marker date="1564258855681" expanded="true" signature="745:785" ph="{...}" />
-            <marker date="1564258855681" expanded="true" signature="876:912" ph="{...}" />
-            <marker date="1564258855681" expanded="true" signature="949:2231" ph="{...}" />
-            <marker date="1564258855681" expanded="true" signature="1358:1464" ph="{...}" />
-            <marker date="1564258855681" expanded="true" signature="1556:1633" ph="{...}" />
-            <marker date="1564258855681" expanded="true" signature="1712:1765" ph="{...}" />
-            <marker date="1564258855681" expanded="true" signature="1773:1861" ph="{...}" />
-            <marker date="1564258855681" expanded="true" signature="1962:2169" ph="{...}" />
-            <marker date="1564258855681" expanded="true" signature="1999:2165" ph="{...}" />
-            <marker date="1564258855681" expanded="true" signature="2040:2158" ph="{...}" />
-            <marker date="1564258855681" expanded="true" signature="2298:2626" ph="{...}" />
-            <marker date="1564258855681" expanded="true" signature="2363:2579" ph="{...}" />
-            <marker date="1564258855681" expanded="true" signature="2586:2623" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Kernel.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="95" column="12" lean-forward="true" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
+        <state relative-caret-position="1328">
+          <caret line="95" column="12" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
           <folding>
             <marker date="1564258924502" expanded="false" signature="6:45" ph="..." />
             <marker date="1564258924502" expanded="true" signature="89:296" ph="{...}" />
@@ -1628,6 +1556,94 @@
             <marker date="1564258924502" expanded="true" signature="2404:2618" ph="{...}" />
             <marker date="1564258924502" expanded="true" signature="2471:2604" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GaussianKernel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="928">
+          <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
+          <folding>
+            <marker date="1564259180864" expanded="true" signature="6:64" ph="..." />
+            <marker date="1564259180864" expanded="true" signature="115:1833" ph="{...}" />
+            <marker date="1564259180864" expanded="true" signature="246:286" ph="{...}" />
+            <marker date="1564259180864" expanded="true" signature="328:515" ph="{...}" />
+            <marker date="1564259180864" expanded="true" signature="593:1831" ph="{...}" />
+            <marker date="1564259180864" expanded="true" signature="978:1543" ph="{...}" />
+            <marker date="1564259180864" expanded="true" signature="1076:1532" ph="{...}" />
+            <marker date="1564259180864" expanded="true" signature="1597:1791" ph="{...}" />
+            <marker date="1564259180864" expanded="true" signature="1654:1781" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Grayscale.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+          <folding>
+            <marker date="1559321806238" expanded="false" signature="6:124" ph="..." />
+            <marker date="1559321806238" expanded="true" signature="171:1028" ph="{...}" />
+            <marker date="1559321806238" expanded="true" signature="430:467" ph="{...}" />
+            <marker date="1559321806238" expanded="true" signature="506:814" ph="{...}" />
+            <marker date="1559321806238" expanded="true" signature="697:811" ph="{...}" />
+            <marker date="1559321806238" expanded="true" signature="889:1023" ph="{...}" />
+            <marker date="1559321806238" expanded="true" signature="914:1017" ph="{...}" />
+            <marker date="1559321806238" expanded="true" signature="951:1013" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7AC571C-A2D0-4B2F-981D-0D886FA067CF/8d/407f8538/Array.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43056">
+          <caret line="2695" column="10" selection-start-line="2695" selection-start-column="10" selection-end-line="2695" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PreviewImage.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="992">
+          <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
+          <folding>
+            <marker date="1564258855681" expanded="true" signature="6:184" ph="..." />
+            <marker date="1564258855681" expanded="true" signature="233:2628" ph="{...}" />
+            <marker date="1564258855681" expanded="true" signature="715:837" ph="{...}" />
+            <marker date="1564258855681" expanded="true" signature="745:785" ph="{...}" />
+            <marker date="1564258855681" expanded="true" signature="876:912" ph="{...}" />
+            <marker date="1564258855681" expanded="true" signature="949:2231" ph="{...}" />
+            <marker date="1564258855681" expanded="true" signature="1358:1464" ph="{...}" />
+            <marker date="1564258855681" expanded="true" signature="1556:1633" ph="{...}" />
+            <marker date="1564258855681" expanded="true" signature="1712:1765" ph="{...}" />
+            <marker date="1564258855681" expanded="true" signature="1773:1861" ph="{...}" />
+            <marker date="1564258855681" expanded="true" signature="1962:2169" ph="{...}" />
+            <marker date="1564258855681" expanded="true" signature="1999:2165" ph="{...}" />
+            <marker date="1564258855681" expanded="true" signature="2040:2158" ph="{...}" />
+            <marker date="1564258855681" expanded="true" signature="2298:2626" ph="{...}" />
+            <marker date="1564258855681" expanded="true" signature="2363:2579" ph="{...}" />
+            <marker date="1564258855681" expanded="true" signature="2586:2623" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/712D4FD8-31E1-48F0-BA51-24A22B81CAC4/ee/7ec90c30/Color.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="976">
+          <caret line="63" column="6" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/712D4FD8-31E1-48F0-BA51-24A22B81CAC4/33/3c0303c0/Texture2D.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6720">
+          <caret line="429" column="6" selection-start-line="429" selection-start-column="6" selection-end-line="429" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1B13BA63-91C7-4847-BBC3-EDDC86DF7EEE/f8/b3202090/Enumerable.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109600">
+          <caret line="6851" column="12" selection-start-line="6851" selection-start-column="12" selection-end-line="6851" selection-end-column="12" />
         </state>
       </provider>
     </entry>
