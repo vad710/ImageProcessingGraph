@@ -46,9 +46,9 @@ public class PreviewImage : ImageProcessingNode
 		var height = this.GetInputValue<int>("Height", this.Height);
 
 		var grayscale = this.GetInputValue<EnumerableFloats>("GrayscalePixels");
-		var colors = this.GetInputValue<EnumerableColors>("RGBPixels");
+		var colorEnumerable = this.GetInputValue<EnumerableColors>("RGBPixels");
 		
-		if (height == 0 || width == 0 || (grayscale == null && colors == null))
+		if (height == 0 || width == 0 || (grayscale == null && colorEnumerable == null))
 		{
 			Debug.Log("Input data is invalid");
 
@@ -57,45 +57,51 @@ public class PreviewImage : ImageProcessingNode
 			return;
 		}
 
-		
-		this.Image = new Texture2D(width, height);	
-		
-		Color[] pixelBuffer;
-		
+		IEnumerable<Color> colors;
 		if (grayscale != null && grayscale.GetEnumerable() != null)
 		{
-			Debug.Log("converting grayscale to rgb");
-	        
-			var pixels = grayscale.GetEnumerable().ToArray();
-
-			pixelBuffer = new Color[pixels.Length];
-			
-			//TODO: We can probably convert to rgb and use SetPixel right into the image instead of doing an extra loop
-			for (int i = 0; i < pixels.Length; i++)
-			{
-				pixelBuffer[i] = new Color(pixels[i],pixels[i],pixels[i]);	
-			}                
-		}
-		else if (colors != null && colors.GetEnumerable() != null)
-		{
-			Debug.Log("Getting rgb pixels...");
-	        
-			pixelBuffer = colors.GetEnumerable().ToArray();
+			colors = grayscale.GetEnumerable().Select(v => new Color(v,v,v));
 		}
 		else
 		{
-			Debug.Log("No pixel data available from source...");
-			pixelBuffer = new Color[0];
+			colors = colorEnumerable.GetEnumerable();
 		}
+		
+		this.Image = new Texture2D(width, height);
 
-		if (pixelBuffer.Length > 0)
+		using (var colorEnum = colors.GetEnumerator())
 		{
-			
-            
-			this.Image.SetPixels(pixelBuffer );
+			for (var y = 0; y < height; y++)
+			{
+				for (var x = 0; x < width; x++)
+				{
+					colorEnum.MoveNext();
+					var pixel = colorEnum.Current;
+					
+					this.Image.SetPixel(x,y,pixel);
+				}		
+			}
+		}
+		
+		this.Image.Apply();
+		this.IsValid = true;
 
-			this.Image.Apply();
-			this.IsValid = true;
+		return;
+	}
+
+	private IEnumerator<Color> GetColors(EnumerableFloats grayscale)
+	{
+		if (grayscale != null && grayscale.GetEnumerable() != null)
+		{
+			grayscale.GetEnumerable().GetEnumerator().MoveNext();
+			var currentValue = grayscale.GetEnumerable().GetEnumerator().Current;
+			
+			
+			yield return new Color(currentValue, currentValue, currentValue);	
+		}
+		else
+		{
+			yield return Color.green;
 		}
 	}
 }
