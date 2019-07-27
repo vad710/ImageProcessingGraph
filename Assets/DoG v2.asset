@@ -16,9 +16,15 @@ MonoBehaviour:
   - {fileID: 114389816666224244}
   - {fileID: 114318095005602904}
   - {fileID: 114748732280739176}
-  - {fileID: 114259571296315924}
   - {fileID: 114306830908101232}
   - {fileID: 114126185027030340}
+  - {fileID: 114736115890276404}
+  - {fileID: 114263705786065748}
+  - {fileID: 114392364669951368}
+  - {fileID: 114954132461052708}
+  - {fileID: 114559528677249856}
+  - {fileID: 114655447336084214}
+  - {fileID: 114895470961202942}
 --- !u!114 &114126185027030340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32,7 +38,7 @@ MonoBehaviour:
   m_Name: Preview Image
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 440, y: -24}
+  position: {x: 280, y: -104}
   ports:
     keys:
     - Width
@@ -87,7 +93,7 @@ MonoBehaviour:
       _dynamic: 0
   Width: 0
   Height: 0
---- !u!114 &114259571296315924
+--- !u!114 &114263705786065748
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,39 +102,95 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b4fd16a16762d54db9e0d94e3db45c1, type: 3}
-  m_Name: Kernel
+  m_Script: {fileID: 11500000, guid: c4decb4c14a40432995ee10e0145ff30, type: 3}
+  m_Name: Convolution
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -200, y: -88}
+  position: {x: 8, y: -40}
   ports:
     keys:
-    - kernel
+    - Values
+    - Width
+    - Height
+    - Average
+    - Kernel
+    - Results
     values:
-    - _fieldName: kernel
-      _node: {fileID: 114259571296315924}
+    - _fieldName: Values
+      _node: {fileID: 114263705786065748}
+      _typeQualifiedName: EnumerableFloats, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: IntensityValues
+        node: {fileID: 114318095005602904}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Width
+      _node: {fileID: 114263705786065748}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Width
+        node: {fileID: 114389816666224244}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Height
+      _node: {fileID: 114263705786065748}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Height
+        node: {fileID: 114389816666224244}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Average
+      _node: {fileID: 114263705786065748}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Kernel
+      _node: {fileID: 114263705786065748}
       _typeQualifiedName: KernelValue, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
-      - fieldName: Kernel
-        node: {fileID: 114306830908101232}
+      - fieldName: kernel
+        node: {fileID: 114736115890276404}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Results
+      _node: {fileID: 114263705786065748}
+      _typeQualifiedName: EnumerableFloats, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: GrayscalePixels
+        node: {fileID: 114392364669951368}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  kernel:
-    Size: 3
-    _internalValues:
-    - -1
-    - -2
-    - -1
-    - 0
-    - 0
-    - 0
-    - 1
-    - 2
-    - 1
+  Width: 0
+  Height: 0
+  Average: 0
+  Kernel:
+    Size: 0
+    _internalValues: []
 --- !u!114 &114306830908101232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,7 +204,7 @@ MonoBehaviour:
   m_Name: Convolution
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 152, y: 88}
+  position: {x: 8, y: -296}
   ports:
     keys:
     - Values
@@ -203,7 +265,7 @@ MonoBehaviour:
         PublicKeyToken=null
       connections:
       - fieldName: kernel
-        node: {fileID: 114259571296315924}
+        node: {fileID: 114655447336084214}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -240,7 +302,7 @@ MonoBehaviour:
   m_Name: Grayscale
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -184, y: -248}
+  position: {x: -232, y: -120}
   ports:
     keys:
     - RGBPixels
@@ -268,6 +330,12 @@ MonoBehaviour:
         reroutePoints: []
       - fieldName: Values
         node: {fileID: 114306830908101232}
+        reroutePoints: []
+      - fieldName: Values
+        node: {fileID: 114263705786065748}
+        reroutePoints: []
+      - fieldName: Values
+        node: {fileID: 114559528677249856}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -319,6 +387,18 @@ MonoBehaviour:
       - fieldName: Width
         node: {fileID: 114126185027030340}
         reroutePoints: []
+      - fieldName: Width
+        node: {fileID: 114263705786065748}
+        reroutePoints: []
+      - fieldName: Width
+        node: {fileID: 114392364669951368}
+        reroutePoints: []
+      - fieldName: Width
+        node: {fileID: 114559528677249856}
+        reroutePoints: []
+      - fieldName: Width
+        node: {fileID: 114895470961202942}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -337,6 +417,18 @@ MonoBehaviour:
       - fieldName: Height
         node: {fileID: 114126185027030340}
         reroutePoints: []
+      - fieldName: Height
+        node: {fileID: 114263705786065748}
+        reroutePoints: []
+      - fieldName: Height
+        node: {fileID: 114392364669951368}
+        reroutePoints: []
+      - fieldName: Height
+        node: {fileID: 114559528677249856}
+        reroutePoints: []
+      - fieldName: Height
+        node: {fileID: 114895470961202942}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -350,6 +442,290 @@ MonoBehaviour:
     y: 1630
     width: 250
     height: 250
+--- !u!114 &114392364669951368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f539ec05e19a646afb87ba8805168670, type: 3}
+  m_Name: Preview Image
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 280, y: 216}
+  ports:
+    keys:
+    - Width
+    - Height
+    - RGBPixels
+    - GrayscalePixels
+    values:
+    - _fieldName: Width
+      _node: {fileID: 114392364669951368}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Width
+        node: {fileID: 114389816666224244}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Height
+      _node: {fileID: 114392364669951368}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Height
+        node: {fileID: 114389816666224244}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: RGBPixels
+      _node: {fileID: 114392364669951368}
+      _typeQualifiedName: EnumerableColors, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: GrayscalePixels
+      _node: {fileID: 114392364669951368}
+      _typeQualifiedName: EnumerableFloats, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Results
+        node: {fileID: 114263705786065748}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Width: 0
+  Height: 0
+--- !u!114 &114559528677249856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4decb4c14a40432995ee10e0145ff30, type: 3}
+  m_Name: Convolution
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 9.759992, y: 247.54655}
+  ports:
+    keys:
+    - Values
+    - Width
+    - Height
+    - Average
+    - Kernel
+    - Results
+    values:
+    - _fieldName: Values
+      _node: {fileID: 114559528677249856}
+      _typeQualifiedName: EnumerableFloats, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: IntensityValues
+        node: {fileID: 114318095005602904}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Width
+      _node: {fileID: 114559528677249856}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Width
+        node: {fileID: 114389816666224244}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Height
+      _node: {fileID: 114559528677249856}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Height
+        node: {fileID: 114389816666224244}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Average
+      _node: {fileID: 114559528677249856}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Kernel
+      _node: {fileID: 114559528677249856}
+      _typeQualifiedName: KernelValue, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: kernel
+        node: {fileID: 114954132461052708}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Results
+      _node: {fileID: 114559528677249856}
+      _typeQualifiedName: EnumerableFloats, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: GrayscalePixels
+        node: {fileID: 114895470961202942}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Width: 0
+  Height: 0
+  Average: 0
+  Kernel:
+    Size: 0
+    _internalValues: []
+--- !u!114 &114655447336084214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cff19efde89ea1f4aa996a00c6a113eb, type: 3}
+  m_Name: Gaussian Kernel
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 8, y: -376}
+  ports:
+    keys:
+    - kernel
+    values:
+    - _fieldName: kernel
+      _node: {fileID: 114655447336084214}
+      _typeQualifiedName: KernelValue, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Kernel
+        node: {fileID: 114306830908101232}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Sigma: 0.5
+  kernel:
+    Size: 5
+    _internalValues:
+    - 0.00000006962479
+    - 0.000028088647
+    - 0.00020754858
+    - 0.000028088647
+    - 0.00000006962479
+    - 0.000028088647
+    - 0.01133177
+    - 0.08373108
+    - 0.01133177
+    - 0.000028088647
+    - 0.00020754858
+    - 0.08373108
+    - 0.6186936
+    - 0.08373108
+    - 0.00020754858
+    - 0.000028088647
+    - 0.01133177
+    - 0.08373108
+    - 0.01133177
+    - 0.000028088647
+    - 0.00000006962479
+    - 0.000028088647
+    - 0.00020754858
+    - 0.000028088647
+    - 0.00000006962479
+--- !u!114 &114736115890276404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cff19efde89ea1f4aa996a00c6a113eb, type: 3}
+  m_Name: Gaussian Kernel
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 8, y: -120}
+  ports:
+    keys:
+    - kernel
+    values:
+    - _fieldName: kernel
+      _node: {fileID: 114736115890276404}
+      _typeQualifiedName: KernelValue, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Kernel
+        node: {fileID: 114263705786065748}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Sigma: 2
+  kernel:
+    Size: 5
+    _internalValues:
+    - 0.023246838
+    - 0.03382395
+    - 0.038327556
+    - 0.03382395
+    - 0.023246838
+    - 0.03382395
+    - 0.049213555
+    - 0.055766266
+    - 0.049213555
+    - 0.03382395
+    - 0.038327556
+    - 0.055766266
+    - 0.06319146
+    - 0.055766266
+    - 0.038327556
+    - 0.03382395
+    - 0.049213555
+    - 0.055766266
+    - 0.049213555
+    - 0.03382395
+    - 0.023246838
+    - 0.03382395
+    - 0.038327556
+    - 0.03382395
+    - 0.023246838
 --- !u!114 &114748732280739176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -363,7 +739,7 @@ MonoBehaviour:
   m_Name: Preview Image
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 152, y: -232}
+  position: {x: 280, y: -424}
   ports:
     keys:
     - Width
@@ -418,3 +794,130 @@ MonoBehaviour:
       _dynamic: 0
   Width: 0
   Height: 0
+--- !u!114 &114895470961202942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f539ec05e19a646afb87ba8805168670, type: 3}
+  m_Name: Preview Image
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 280, y: 536}
+  ports:
+    keys:
+    - Width
+    - Height
+    - RGBPixels
+    - GrayscalePixels
+    values:
+    - _fieldName: Width
+      _node: {fileID: 114895470961202942}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Width
+        node: {fileID: 114389816666224244}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Height
+      _node: {fileID: 114895470961202942}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Height
+        node: {fileID: 114389816666224244}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: RGBPixels
+      _node: {fileID: 114895470961202942}
+      _typeQualifiedName: EnumerableColors, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: GrayscalePixels
+      _node: {fileID: 114895470961202942}
+      _typeQualifiedName: EnumerableFloats, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Results
+        node: {fileID: 114559528677249856}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Width: 0
+  Height: 0
+--- !u!114 &114954132461052708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cff19efde89ea1f4aa996a00c6a113eb, type: 3}
+  m_Name: Gaussian Kernel
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 8, y: 120}
+  ports:
+    keys:
+    - kernel
+    values:
+    - _fieldName: kernel
+      _node: {fileID: 114954132461052708}
+      _typeQualifiedName: KernelValue, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Kernel
+        node: {fileID: 114559528677249856}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Sigma: 4
+  kernel:
+    Size: 5
+    _internalValues:
+    - 0.03520395
+    - 0.038663972
+    - 0.0398913
+    - 0.038663972
+    - 0.03520395
+    - 0.038663972
+    - 0.042464066
+    - 0.043812018
+    - 0.042464066
+    - 0.038663972
+    - 0.0398913
+    - 0.043812018
+    - 0.045202762
+    - 0.043812018
+    - 0.0398913
+    - 0.038663972
+    - 0.042464066
+    - 0.043812018
+    - 0.042464066
+    - 0.038663972
+    - 0.03520395
+    - 0.038663972
+    - 0.0398913
+    - 0.038663972
+    - 0.03520395

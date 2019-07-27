@@ -17,7 +17,7 @@ public class Kernel : ImageProcessingNode
     }
 }
 
-[Serializable]
+[Serializable] 
 public class KernelValue : ISerializationCallbackReceiver
 {
     private readonly float[,] kernelValues5X5 = new float[,] {{1,1,1,1,1}, {1,1,1,1,1}, {1,1,1,1,1}, {1,1,1,1,1}, {1,1,1,1,1}};
@@ -25,7 +25,7 @@ public class KernelValue : ISerializationCallbackReceiver
     
     public KernelValue()
     {
-        this.Values = kernelValues3X3;
+        //this.Values = kernelValues3X3;
     }
     
     
@@ -93,6 +93,8 @@ public class KernelValue : ISerializationCallbackReceiver
         if (_internalValues != null)
         {
             var kernelSize = (int)this.Size;
+            
+            this.Values = new float[kernelSize,kernelSize];
             
             var indexer = 0;
             

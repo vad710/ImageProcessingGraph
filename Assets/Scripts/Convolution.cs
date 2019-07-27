@@ -5,11 +5,7 @@ using XNode;
 
 public class Convolution : ImageProcessingNode
 {
-    //Vertical Convolution
-//    public float[,] KernelValues;
-//    
-//    public float[,] KernelValues5x5 = new float[5,5];
-//    public float[,] KernelValues3x3 = new float[3, 3];
+
     
     [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public EnumerableFloats Values;
     [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public int Width;
@@ -17,7 +13,6 @@ public class Convolution : ImageProcessingNode
     [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public bool Average;
     [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public KernelValue Kernel;
     
-//    [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public KernelSize Size;
     
     [Output] public EnumerableFloats Results;
 

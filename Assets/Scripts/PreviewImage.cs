@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor.Experimental.Networking.PlayerConnection;
 using UnityEngine;
 using XNode;
 
@@ -62,9 +63,15 @@ public class PreviewImage : ImageProcessingNode
 		{
 			colors = grayscale.GetEnumerable().Select(v => new Color(v,v,v));
 		}
-		else
+		else if (colorEnumerable != null && colorEnumerable.GetEnumerable() != null)
 		{
 			colors = colorEnumerable.GetEnumerable();
+		}
+
+		else
+		{
+			//ERROR CONDITION
+			colors = Enumerable.Repeat(Color.cyan, height * width);
 		}
 		
 		this.Image = new Texture2D(width, height);
