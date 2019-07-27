@@ -29,8 +29,6 @@ public class Convolution : ImageProcessingNode
         var yOffset = kernelCenterIndex; 
         
         var valuesArray = values.ToArray();
-        
-        //var temp = new float[width * height];
 
         var kernelTotal = 0f;
 
