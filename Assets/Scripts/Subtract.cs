@@ -51,21 +51,11 @@ public class Subtract : ImageProcessingNode
                     val =  (val - from_min) / 2;
                 }
                 
-//                if (val < min)
-//                {
-//                    min = val;
-//                }
-//
-//                if (val > max)
-//                {
-//                    max = val;
-//                }
 
                 yield return val;    
             }
         }
         
-        //Debug.Log("Min difference: " + min + " max difference: " + max);
     }
     
     public override void OnNodeUpdated()

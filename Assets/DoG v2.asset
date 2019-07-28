@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Name: Preview Image
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 968, y: 456}
+  position: {x: 904, y: 472}
   ports:
     keys:
     - Width
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Name: Convolution
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 8, y: -40}
+  position: {x: 72, y: 360}
   ports:
     keys:
     - Values
@@ -288,7 +288,7 @@ MonoBehaviour:
   m_Name: Threshold
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 712, y: -152}
+  position: {x: 696, y: -168}
   ports:
     keys:
     - Values
@@ -345,7 +345,7 @@ MonoBehaviour:
   m_Name: Convolution
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 8, y: -296}
+  position: {x: 72, y: 40}
   ports:
     keys:
     - Values
@@ -504,7 +504,7 @@ MonoBehaviour:
   m_Name: Preview Image
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 968, y: -264}
+  position: {x: 904, y: -168}
   ports:
     keys:
     - Width
@@ -759,7 +759,7 @@ MonoBehaviour:
   m_Name: Threshold
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 728, y: 200}
+  position: {x: 696, y: 152}
   ports:
     keys:
     - Values
@@ -816,7 +816,7 @@ MonoBehaviour:
   m_Name: Subtract
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 504, y: 440}
+  position: {x: 488, y: 472}
   ports:
     keys:
     - FirstSet
@@ -894,7 +894,7 @@ MonoBehaviour:
   m_Name: Preview Image
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 968, y: 104}
+  position: {x: 904, y: 152}
   ports:
     keys:
     - Width
@@ -962,7 +962,7 @@ MonoBehaviour:
   m_Name: Convolution
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 8, y: 232}
+  position: {x: 72, y: 616}
   ports:
     keys:
     - Values
@@ -1063,7 +1063,7 @@ MonoBehaviour:
   m_Name: Float
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 520, y: -408}
+  position: {x: -232, y: -184}
   ports:
     keys:
     - Value
@@ -1086,7 +1086,7 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  Value: 0.015
+  Value: 0.01
 --- !u!114 &114655447336084214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1100,7 +1100,7 @@ MonoBehaviour:
   m_Name: Gaussian Kernel
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 8, y: -376}
+  position: {x: 72, y: -40}
   ports:
     keys:
     - kernel
@@ -1117,35 +1117,35 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  Sigma: 1
+  Sigma: 2
   kernel:
     Size: 5
     _internalValues:
-    - 0.0029690175
-    - 0.013306212
-    - 0.021938235
-    - 0.013306212
-    - 0.0029690175
-    - 0.013306212
-    - 0.059634306
-    - 0.09832035
-    - 0.059634306
-    - 0.013306212
-    - 0.021938235
-    - 0.09832035
-    - 0.16210285
-    - 0.09832035
-    - 0.021938235
-    - 0.013306212
-    - 0.059634306
-    - 0.09832035
-    - 0.059634306
-    - 0.013306212
-    - 0.0029690175
-    - 0.013306212
-    - 0.021938235
-    - 0.013306212
-    - 0.0029690175
+    - 0.023246838
+    - 0.03382395
+    - 0.038327556
+    - 0.03382395
+    - 0.023246838
+    - 0.03382395
+    - 0.049213555
+    - 0.055766266
+    - 0.049213555
+    - 0.03382395
+    - 0.038327556
+    - 0.055766266
+    - 0.06319146
+    - 0.055766266
+    - 0.038327556
+    - 0.03382395
+    - 0.049213555
+    - 0.055766266
+    - 0.049213555
+    - 0.03382395
+    - 0.023246838
+    - 0.03382395
+    - 0.038327556
+    - 0.03382395
+    - 0.023246838
 --- !u!114 &114713967949488552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1159,7 +1159,7 @@ MonoBehaviour:
   m_Name: Threshold
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 744, y: 488}
+  position: {x: 696, y: 472}
   ports:
     keys:
     - Values
@@ -1216,7 +1216,7 @@ MonoBehaviour:
   m_Name: Gaussian Kernel
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 8, y: -120}
+  position: {x: 72, y: 280}
   ports:
     keys:
     - kernel
@@ -1233,35 +1233,35 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  Sigma: 2
+  Sigma: 4
   kernel:
     Size: 5
     _internalValues:
-    - 0.023246838
-    - 0.03382395
-    - 0.038327556
-    - 0.03382395
-    - 0.023246838
-    - 0.03382395
-    - 0.049213555
-    - 0.055766266
-    - 0.049213555
-    - 0.03382395
-    - 0.038327556
-    - 0.055766266
-    - 0.06319146
-    - 0.055766266
-    - 0.038327556
-    - 0.03382395
-    - 0.049213555
-    - 0.055766266
-    - 0.049213555
-    - 0.03382395
-    - 0.023246838
-    - 0.03382395
-    - 0.038327556
-    - 0.03382395
-    - 0.023246838
+    - 0.03520395
+    - 0.038663972
+    - 0.0398913
+    - 0.038663972
+    - 0.03520395
+    - 0.038663972
+    - 0.042464066
+    - 0.043812018
+    - 0.042464066
+    - 0.038663972
+    - 0.0398913
+    - 0.043812018
+    - 0.045202762
+    - 0.043812018
+    - 0.0398913
+    - 0.038663972
+    - 0.042464066
+    - 0.043812018
+    - 0.042464066
+    - 0.038663972
+    - 0.03520395
+    - 0.038663972
+    - 0.0398913
+    - 0.038663972
+    - 0.03520395
 --- !u!114 &114748732280739176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1343,7 +1343,7 @@ MonoBehaviour:
   m_Name: Subtract
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 504, y: 152}
+  position: {x: 488, y: 152}
   ports:
     keys:
     - FirstSet
@@ -1489,7 +1489,7 @@ MonoBehaviour:
   m_Name: Gaussian Kernel
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 8, y: 120}
+  position: {x: 72, y: 536}
   ports:
     keys:
     - kernel
@@ -1506,35 +1506,35 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-  Sigma: 4
+  Sigma: 8
   kernel:
     Size: 5
     _internalValues:
-    - 0.03520395
-    - 0.038663972
-    - 0.0398913
-    - 0.038663972
-    - 0.03520395
-    - 0.038663972
-    - 0.042464066
-    - 0.043812018
-    - 0.042464066
-    - 0.038663972
-    - 0.0398913
-    - 0.043812018
-    - 0.045202762
-    - 0.043812018
-    - 0.0398913
-    - 0.038663972
-    - 0.042464066
-    - 0.043812018
-    - 0.042464066
-    - 0.038663972
-    - 0.03520395
-    - 0.038663972
-    - 0.0398913
-    - 0.038663972
-    - 0.03520395
+    - 0.03876271
+    - 0.03968194
+    - 0.039993167
+    - 0.03968194
+    - 0.03876271
+    - 0.03968194
+    - 0.04062297
+    - 0.04094158
+    - 0.04062297
+    - 0.03968194
+    - 0.039993167
+    - 0.04094158
+    - 0.04126269
+    - 0.04094158
+    - 0.039993167
+    - 0.03968194
+    - 0.04062297
+    - 0.04094158
+    - 0.04062297
+    - 0.03968194
+    - 0.03876271
+    - 0.03968194
+    - 0.039993167
+    - 0.03968194
+    - 0.03876271
 --- !u!114 &114987470173323374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1548,7 +1548,7 @@ MonoBehaviour:
   m_Name: Subtract
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 488, y: -184}
+  position: {x: 488, y: -168}
   ports:
     keys:
     - FirstSet

@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="211361d5-c7ed-495a-ac90-ce6eb9c62c6c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Float.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ARFoundation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ARFoundation/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/DoG v2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DoG v2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Convolution.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Convolution.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Subtract.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Subtract.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,14 +43,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Float.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="64">
+              <caret line="4" column="54" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
               <folding>
-                <marker date="1564264622991" expanded="true" signature="54:264" ph="{...}" />
-                <marker date="1564264622991" expanded="true" signature="223:262" ph="{...}" />
+                <marker date="1564264706322" expanded="true" signature="54:230" ph="{...}" />
+                <marker date="1564264706322" expanded="true" signature="189:228" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -105,24 +103,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Subtract.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="50" column="42" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="42" />
+            <state relative-caret-position="400">
+              <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
               <folding>
-                <marker date="1561770897522" expanded="false" signature="6:84" ph="..." />
-                <marker date="1561770897522" expanded="true" signature="129:2682" ph="{...}" />
-                <marker date="1561770897522" expanded="true" signature="621:662" ph="{...}" />
-                <marker date="1561770897522" expanded="true" signature="808:2125" ph="{...}" />
-                <marker date="1561770897522" expanded="true" signature="927:998" ph="/* var max = float.MinValue; ... */" />
-                <marker date="1561770897522" expanded="true" signature="1044:1148" ph="/* const float from_max = 1f; ... */" />
-                <marker date="1561770897522" expanded="true" signature="1231:2035" ph="{...}" />
-                <marker date="1561770897522" expanded="true" signature="1303:2025" ph="{...}" />
-                <marker date="1561770897522" expanded="true" signature="1425:1503" ph="{...}" />
-                <marker date="1561770897522" expanded="true" signature="1549:1740" ph="{...}" />
-                <marker date="1561770897522" expanded="true" signature="1758:1972" ph="/* if (val &lt; min) ... */" />
-                <marker date="1561770897522" expanded="true" signature="2171:2680" ph="{...}" />
+                <marker date="1564266026396" expanded="false" signature="6:84" ph="..." />
+                <marker date="1564266026396" expanded="true" signature="129:2392" ph="{...}" />
+                <marker date="1564266026396" expanded="true" signature="621:662" ph="{...}" />
+                <marker date="1564266026396" expanded="true" signature="808:1835" ph="{...}" />
+                <marker date="1564266026396" expanded="true" signature="927:998" ph="/* var max = float.MinValue; ... */" />
+                <marker date="1564266026396" expanded="true" signature="1044:1148" ph="/* const float from_max = 1f; ... */" />
+                <marker date="1564266026396" expanded="true" signature="1231:1820" ph="{...}" />
+                <marker date="1564266026396" expanded="true" signature="1303:1810" ph="{...}" />
+                <marker date="1564266026396" expanded="true" signature="1425:1503" ph="{...}" />
+                <marker date="1564266026396" expanded="true" signature="1549:1740" ph="{...}" />
+                <marker date="1564266026396" expanded="true" signature="1881:2390" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -318,7 +315,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Magnitude.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Extrema.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Threshold.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Subtract.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/ConvolutionEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ImageProcessingNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Harris.cs" />
@@ -333,6 +329,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GaussianKernel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Convolution.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Float.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Subtract.cs" />
       </list>
     </option>
   </component>
@@ -437,12 +434,12 @@
       <workItem from="1561331513023" duration="1664000" />
       <workItem from="1561769185516" duration="239000" />
       <workItem from="1564105323678" duration="28639000" />
-      <workItem from="1564260913246" duration="3705000" />
+      <workItem from="1564260913246" duration="4495000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123912000" />
+    <option name="totallyTimeSpent" value="124702000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1574,27 +1571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Subtract.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="50" column="42" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="42" />
-          <folding>
-            <marker date="1561770897522" expanded="false" signature="6:84" ph="..." />
-            <marker date="1561770897522" expanded="true" signature="129:2682" ph="{...}" />
-            <marker date="1561770897522" expanded="true" signature="621:662" ph="{...}" />
-            <marker date="1561770897522" expanded="true" signature="808:2125" ph="{...}" />
-            <marker date="1561770897522" expanded="true" signature="927:998" ph="/* var max = float.MinValue; ... */" />
-            <marker date="1561770897522" expanded="true" signature="1044:1148" ph="/* const float from_max = 1f; ... */" />
-            <marker date="1561770897522" expanded="true" signature="1231:2035" ph="{...}" />
-            <marker date="1561770897522" expanded="true" signature="1303:2025" ph="{...}" />
-            <marker date="1561770897522" expanded="true" signature="1425:1503" ph="{...}" />
-            <marker date="1561770897522" expanded="true" signature="1549:1740" ph="{...}" />
-            <marker date="1561770897522" expanded="true" signature="1758:1972" ph="/* if (val &lt; min) ... */" />
-            <marker date="1561770897522" expanded="true" signature="2171:2680" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Convolution.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
@@ -1639,11 +1615,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Float.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="64">
+          <caret line="4" column="54" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
           <folding>
-            <marker date="1564264622991" expanded="true" signature="54:264" ph="{...}" />
-            <marker date="1564264622991" expanded="true" signature="223:262" ph="{...}" />
+            <marker date="1564264706322" expanded="true" signature="54:230" ph="{...}" />
+            <marker date="1564264706322" expanded="true" signature="189:228" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Subtract.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+          <folding>
+            <marker date="1564266026396" expanded="false" signature="6:84" ph="..." />
+            <marker date="1564266026396" expanded="true" signature="129:2392" ph="{...}" />
+            <marker date="1564266026396" expanded="true" signature="621:662" ph="{...}" />
+            <marker date="1564266026396" expanded="true" signature="808:1835" ph="{...}" />
+            <marker date="1564266026396" expanded="true" signature="927:998" ph="/* var max = float.MinValue; ... */" />
+            <marker date="1564266026396" expanded="true" signature="1044:1148" ph="/* const float from_max = 1f; ... */" />
+            <marker date="1564266026396" expanded="true" signature="1231:1820" ph="{...}" />
+            <marker date="1564266026396" expanded="true" signature="1303:1810" ph="{...}" />
+            <marker date="1564266026396" expanded="true" signature="1425:1503" ph="{...}" />
+            <marker date="1564266026396" expanded="true" signature="1549:1740" ph="{...}" />
+            <marker date="1564266026396" expanded="true" signature="1881:2390" ph="{...}" />
           </folding>
         </state>
       </provider>
