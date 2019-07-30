@@ -83,6 +83,7 @@ MonoBehaviour:
       _dynamic: 0
   Width: 0
   Height: 0
+  FileName: 
 --- !u!114 &114517870042190632
 MonoBehaviour:
   m_ObjectHideFlags: 0

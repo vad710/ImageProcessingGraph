@@ -1,4 +1,6 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
+using UnityEditor;
 using UnityEngine;
 using XNodeEditor;
 
@@ -51,12 +53,31 @@ public class PreviewImageEditor : NodeEditor
         Debug.Log("Saving Image");
         
         var jpg =  image.EncodeToJPG();
-        var file = new FileInfo(@"preview.jpg");
-        using (var writer = file.OpenWrite())
-        {
-            writer.Write(jpg, 0, jpg.Length);
-            writer.Close();
-        }
 
+        var node = target as PreviewImage;
+
+        var directory = String.Empty;
+        var fileName = "preview.jpg";
+        
+        if (node != null && node.FileName != null && node.FileName.Length > 0)
+        {
+            var lastSavedFile = new FileInfo(node.FileName);
+            directory = lastSavedFile.DirectoryName;
+            fileName = lastSavedFile.Name;
+        }
+        
+        var newPath = EditorUtility.SaveFilePanel("Save Preview", directory, fileName, "jpg");
+
+        if (newPath != null)
+        {
+            var newFile = new FileInfo(newPath);
+            using (var writer = newFile.OpenWrite())
+            {
+                writer.Write(jpg, 0, jpg.Length);
+                writer.Close();
+            }
+            
+            node.FileName = newPath;//save the path for later
+        }
     }
 }

@@ -19,6 +19,8 @@ public class GaussianKernel : ImageProcessingNode
         this.kernel = new KernelValue();
         this.kernel.SetKernelSize(KernelValue.KernelSize.Five);
         this.kernel.Values = CalculateGaussianKernel(5, this.Sigma);
+        
+        //Debug.Log(this.kernel);
 
     }
 

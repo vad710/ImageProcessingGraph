@@ -13,7 +13,8 @@ public class PreviewImage : ImageProcessingNode
 	[Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public int Height;
 	[Input(ShowBackingValue.Never, ConnectionType.Override)] public EnumerableColors RGBPixels;
 	[Input(ShowBackingValue.Never, ConnectionType.Override)] public EnumerableFloats GrayscalePixels;
-	
+
+	public string FileName;
 	
 	[NonSerialized]
 	public Texture2D Image;
@@ -95,21 +96,6 @@ public class PreviewImage : ImageProcessingNode
 
 		return;
 	}
-
-	private IEnumerator<Color> GetColors(EnumerableFloats grayscale)
-	{
-		if (grayscale != null && grayscale.GetEnumerable() != null)
-		{
-			grayscale.GetEnumerable().GetEnumerator().MoveNext();
-			var currentValue = grayscale.GetEnumerable().GetEnumerator().Current;
-			
-			
-			yield return new Color(currentValue, currentValue, currentValue);	
-		}
-		else
-		{
-			yield return Color.green;
-		}
-	}
+	
 }
 

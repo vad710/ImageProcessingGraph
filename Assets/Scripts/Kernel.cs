@@ -1,4 +1,5 @@
 using System;
+using System.Text;
 using UnityEngine;
 using XNode;
 
@@ -59,6 +60,32 @@ public class KernelValue : ISerializationCallbackReceiver
     {
         Three = 3,
         Five = 5
+    }
+
+    public override string ToString()
+    {
+        var sb = new StringBuilder();
+        
+        var kernelSize = (int)this.Size;
+
+        //var total = 0f;
+        
+        for (var x = 0; x < kernelSize; x++)
+        {
+            for (var y = 0; y < kernelSize; y++)
+            {
+                sb.Append(this.Values[x, y]);
+                sb.Append("\t");
+
+                //total += this.Values[x, y];
+            }
+
+            sb.AppendLine();
+        }
+
+        //sb.AppendFormat("Total: {0}", total);
+        
+        return sb.ToString();
     }
 
     public void OnBeforeSerialize()
