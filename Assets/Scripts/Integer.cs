@@ -1,12 +1,12 @@
 using XNode;
 
-public class Float : ImageProcessingNode
+public class Integer : ImageProcessingNode
 {
-    [Node.OutputAttribute(Node.ShowBackingValue.Always)] public float Value;
+    [Node.OutputAttribute(Node.ShowBackingValue.Always)] public int Value;
     
     protected override void Init()
     {
-        base.name = "Input Float";
+        base.name = "Input Integer";
 
         base.Init();
     }

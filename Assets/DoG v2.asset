@@ -759,7 +759,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c87ae6d1935c41939eb111b3d25834e, type: 3}
-  m_Name: Texture2D Loader
+  m_Name: Input Texture2D
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
   position: {x: -456, y: -232}
@@ -1397,7 +1397,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42a01f2d24ee5664494d9a7cc354cd25, type: 3}
-  m_Name: Float
+  m_Name: Input Float
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
   position: {x: -232, y: -184}

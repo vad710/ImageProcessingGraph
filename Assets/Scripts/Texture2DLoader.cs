@@ -19,7 +19,7 @@ public class Texture2DLoader : ImageProcessingNode
 
 	protected override void Init()
 	{
-		base.name = "Texture2D Loader";
+		base.name = "Input Texture2D";
 		this.PreviewTexture = Texture2D.blackTexture;
 		
 		this.OnNodeUpdated();
