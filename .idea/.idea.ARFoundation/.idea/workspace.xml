@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="211361d5-c7ed-495a-ac90-ce6eb9c62c6c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ARFoundation/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ARFoundation/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ARFoundation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ARFoundation/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DoG v2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DoG v2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DoG.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DoG.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KernelSerialization.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KernelSerialization.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/PreviewImageEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/PreviewImageEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GaussianKernel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GaussianKernel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Kernel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Kernel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PreviewImage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PreviewImage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sobel.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sobel.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -165,18 +157,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Editor/PreviewImageEditor.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+            <state relative-caret-position="217">
+              <caret line="61" column="77" selection-start-line="61" selection-start-column="77" selection-end-line="61" selection-end-column="77" />
               <folding>
-                <marker date="1564449461483" expanded="true" signature="6:87" ph="..." />
-                <marker date="1564449461483" expanded="true" signature="174:2333" ph="{...}" />
-                <marker date="1564449461483" expanded="true" signature="218:1381" ph="{...}" />
-                <marker date="1564449461483" expanded="true" signature="922:1011" ph="{...}" />
-                <marker date="1564449461483" expanded="true" signature="1174:1236" ph="{...}" />
-                <marker date="1564449461483" expanded="true" signature="1436:2331" ph="{...}" />
-                <marker date="1564449461483" expanded="true" signature="1707:1884" ph="{...}" />
-                <marker date="1564449461483" expanded="true" signature="2018:2325" ph="{...}" />
-                <marker date="1564449461483" expanded="true" signature="2143:2240" ph="{...}" />
+                <marker date="1564449557487" expanded="true" signature="6:87" ph="..." />
+                <marker date="1564449557487" expanded="true" signature="174:2361" ph="{...}" />
+                <marker date="1564449557487" expanded="true" signature="218:1381" ph="{...}" />
+                <marker date="1564449557487" expanded="true" signature="922:1011" ph="{...}" />
+                <marker date="1564449557487" expanded="true" signature="1174:1236" ph="{...}" />
+                <marker date="1564449557487" expanded="true" signature="1436:2359" ph="{...}" />
+                <marker date="1564449557487" expanded="true" signature="1735:1912" ph="{...}" />
+                <marker date="1564449557487" expanded="true" signature="2046:2353" ph="{...}" />
+                <marker date="1564449557487" expanded="true" signature="2171:2268" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -358,8 +350,8 @@
     </ignored-facets>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="2571" />
-    <option name="height" value="1451" />
+    <option name="width" value="2573" />
+    <option name="height" value="1453" />
   </component>
   <component name="ProjectView">
     <navigator currentView="UnityExplorer" proportions="" version="1">
@@ -465,12 +457,12 @@
       <workItem from="1564105323678" duration="28639000" />
       <workItem from="1564260913246" duration="5093000" />
       <workItem from="1564376424490" duration="1102000" />
-      <workItem from="1564448971474" duration="499000" />
+      <workItem from="1564448971474" duration="1186000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126901000" />
+    <option name="totallyTimeSpent" value="127588000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -483,7 +475,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1477" height="797" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20422535" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1661,18 +1652,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Editor/PreviewImageEditor.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+        <state relative-caret-position="217">
+          <caret line="61" column="77" selection-start-line="61" selection-start-column="77" selection-end-line="61" selection-end-column="77" />
           <folding>
-            <marker date="1564449461483" expanded="true" signature="6:87" ph="..." />
-            <marker date="1564449461483" expanded="true" signature="174:2333" ph="{...}" />
-            <marker date="1564449461483" expanded="true" signature="218:1381" ph="{...}" />
-            <marker date="1564449461483" expanded="true" signature="922:1011" ph="{...}" />
-            <marker date="1564449461483" expanded="true" signature="1174:1236" ph="{...}" />
-            <marker date="1564449461483" expanded="true" signature="1436:2331" ph="{...}" />
-            <marker date="1564449461483" expanded="true" signature="1707:1884" ph="{...}" />
-            <marker date="1564449461483" expanded="true" signature="2018:2325" ph="{...}" />
-            <marker date="1564449461483" expanded="true" signature="2143:2240" ph="{...}" />
+            <marker date="1564449557487" expanded="true" signature="6:87" ph="..." />
+            <marker date="1564449557487" expanded="true" signature="174:2361" ph="{...}" />
+            <marker date="1564449557487" expanded="true" signature="218:1381" ph="{...}" />
+            <marker date="1564449557487" expanded="true" signature="922:1011" ph="{...}" />
+            <marker date="1564449557487" expanded="true" signature="1174:1236" ph="{...}" />
+            <marker date="1564449557487" expanded="true" signature="1436:2359" ph="{...}" />
+            <marker date="1564449557487" expanded="true" signature="1735:1912" ph="{...}" />
+            <marker date="1564449557487" expanded="true" signature="2046:2353" ph="{...}" />
+            <marker date="1564449557487" expanded="true" signature="2171:2268" ph="{...}" />
           </folding>
         </state>
       </provider>

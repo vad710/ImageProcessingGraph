@@ -12,6 +12,7 @@ public class Harris : ImageProcessingNode
     
     [Output] public EnumerableFloats Results;
     
+    
     public override object GetValue(NodePort port)
     {
         return this.Results;
@@ -74,6 +75,8 @@ public class Harris : ImageProcessingNode
     
     public override void OnNodeUpdated()
     {
+        Debug.LogError("Harris Node not finished!");
+        
         var verticalEdges = this.GetInputValue("VerticalEdges", this.VerticalEdges);
         var horizontalEdges = this.GetInputValue("HorizontalEdges", this.HorizontalEdges);
         
