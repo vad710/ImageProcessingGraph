@@ -28,7 +28,7 @@ public class Convolution : ImageProcessingNode
         var xOffset = kernelCenterIndex;
         var yOffset = kernelCenterIndex; 
         
-        var valuesArray = values.ToArray();
+        var valuesArray = values.ToArray(); //TODO: I wonder if we can add a caching system to EnumerableFloats 
 
         var kernelTotal = 0f;
 

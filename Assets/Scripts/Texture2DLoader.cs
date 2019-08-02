@@ -12,7 +12,7 @@ public class Texture2DLoader : ImageProcessingNode
 	[Output] public int Height;
 	
 	public bool Crop;
-	public RectInt CropRect = new RectInt(0,0, 250, 250);
+	public RectInt CropRect = new RectInt(0,0, 256, 256);
 
 	[NonSerialized]
 	public Texture2D PreviewTexture;
@@ -32,21 +32,14 @@ public class Texture2DLoader : ImageProcessingNode
 	{
 		if (this.texture != null)
 		{	
-			if (port.fieldName == "RGBPixels")
+			switch (port.fieldName)
 			{
-				//return new TextureToColors(this.texture);
-				//return this.texture.GetPixels();
-				return this.RGBPixels;
-			}
-			
-			if (port.fieldName == "Width")
-			{
-				return this.GetWidth();
-			}
-
-			if (port.fieldName == "Height")
-			{
-				return this.GetHeight();
+				case "RGBPixels":
+					return this.RGBPixels;
+				case "Width":
+					return this.GetWidth();
+				case "Height":
+					return this.GetHeight();
 			}
 		}
 
