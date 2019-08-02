@@ -35,6 +35,11 @@ public class Texture2DLoader : ImageProcessingNode
 			switch (port.fieldName)
 			{
 				case "RGBPixels":
+					if (this.RGBPixels == null || this.RGBPixels.GetEnumerable() == null)
+					{
+						Debug.Log("Forcing refresh on texture loader...");
+						this.OnNodeUpdated();
+					}
 					return this.RGBPixels;
 				case "Width":
 					return this.GetWidth();
@@ -50,11 +55,11 @@ public class Texture2DLoader : ImageProcessingNode
 	public override void OnNodeUpdated()
 	{
 		Debug.Log("Reloading pixels in Texture2DLoader");
-
+		Color[] pixels;
+		
+		
 		if (this.texture != null && this.texture.width > 0)
 		{
-			Color[] pixels;
-			
 			if (this.Crop)
 			{
 				pixels = this.texture.GetPixels(this.CropRect.x, this.CropRect.y, this.CropRect.width,
@@ -69,12 +74,14 @@ public class Texture2DLoader : ImageProcessingNode
 			this.PreviewTexture.SetPixels(pixels);
 			this.PreviewTexture.Apply();
 			
-			this.RGBPixels = new EnumerableColors(pixels);	
 		}
 		else
 		{
 			this.texture = Texture2D.blackTexture;
+			pixels = this.texture.GetPixels();
 		}
+		
+		this.RGBPixels = new EnumerableColors(pixels);
 	}
 
 	private int GetHeight()

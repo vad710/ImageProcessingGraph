@@ -504,14 +504,14 @@ MonoBehaviour:
       _typeQualifiedName: EnumerableFloats, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
-      - fieldName: GrayscalePixels
-        node: {fileID: 114392364669951368}
-        reroutePoints: []
       - fieldName: SecondSet
         node: {fileID: 114805590801517624}
         reroutePoints: []
       - fieldName: FirstSet
         node: {fileID: 114463657045956942}
+        reroutePoints: []
+      - fieldName: GrayscalePixels
+        node: {fileID: 114392364669951368}
         reroutePoints: []
       _direction: 1
       _connectionType: 0

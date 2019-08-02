@@ -11,7 +11,7 @@ public class Convolution : ImageProcessingNode
     [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public int Width;
     [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public int Height;
     [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public bool Average;
-    [Input(ShowBackingValue.Unconnected, ConnectionType.Override)] public KernelValue Kernel;
+    [Input(ShowBackingValue.Never, ConnectionType.Override)] public KernelValue Kernel;
     
     
     [Output] public EnumerableFloats Results;
