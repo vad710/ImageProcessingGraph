@@ -95,7 +95,8 @@ MonoBehaviour:
       _dynamic: 0
   Width: 0
   Height: 0
-  FileName: 
+  FileName: C:/Users/vinny/OneDrive/Computer Vision for Developers in a Hurry/Illustrations/07-Improving
+    Features/scale_3.jpg
 --- !u!114 &114213516580776612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -521,7 +522,8 @@ MonoBehaviour:
       _dynamic: 0
   Width: 0
   Height: 0
-  FileName: 
+  FileName: C:/Users/vinny/OneDrive/Computer Vision for Developers in a Hurry/Illustrations/07-Improving
+    Features/Scale_0.jpg
 --- !u!114 &114280186894672926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -712,7 +714,7 @@ MonoBehaviour:
   Crop: 1
   CropRect:
     x: 335
-    y: 1630
+    y: 1631
     width: 256
     height: 256
 --- !u!114 &114357002020945154
@@ -783,7 +785,8 @@ MonoBehaviour:
       _dynamic: 0
   Width: 0
   Height: 0
-  FileName: 
+  FileName: C:/Users/vinny/OneDrive/Computer Vision for Developers in a Hurry/Illustrations/07-Improving
+    Features/scale_5.jpg
 --- !u!114 &114429451518408604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -852,7 +855,8 @@ MonoBehaviour:
       _dynamic: 0
   Width: 0
   Height: 0
-  FileName: C:/Users/vinny/Desktop/preview.jpg
+  FileName: C:/Users/vinny/OneDrive/Computer Vision for Developers in a Hurry/Illustrations/07-Improving
+    Features/scale_4.jpg
 --- !u!114 &114493644435115622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -921,7 +925,8 @@ MonoBehaviour:
       _dynamic: 0
   Width: 0
   Height: 0
-  FileName: C:/Users/vinny/Desktop/preview.jpg
+  FileName: C:/Users/vinny/OneDrive/Computer Vision for Developers in a Hurry/Illustrations/07-Improving
+    Features/Scale_1.jpg
 --- !u!114 &114551418781245182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1033,7 +1038,8 @@ MonoBehaviour:
       _dynamic: 0
   Width: 3
   Height: 0
-  FileName: C:/Users/vinny/Desktop/preview.jpg
+  FileName: C:/Users/vinny/OneDrive/Computer Vision for Developers in a Hurry/Illustrations/07-Improving
+    Features/scale_2.png
 --- !u!114 &114750050138274012
 MonoBehaviour:
   m_ObjectHideFlags: 0

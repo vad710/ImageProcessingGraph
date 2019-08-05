@@ -52,12 +52,12 @@ public class PreviewImageEditor : NodeEditor
     {
         Debug.Log("Saving Image");
         
-        var jpg =  image.EncodeToJPG();
+        var jpg =  image.EncodeToPNG();
 
         var node = target as PreviewImage;
 
         var directory = String.Empty;
-        var fileName = "preview.jpg";
+        var fileName = "preview.png";
         
         if (node != null && node.FileName != null && node.FileName.Length > 0)
         {
@@ -66,9 +66,9 @@ public class PreviewImageEditor : NodeEditor
             fileName = lastSavedFile.Name;
         }
         
-        var newPath = EditorUtility.SaveFilePanel("Save Preview", directory, fileName, "jpg");
+        var newPath = EditorUtility.SaveFilePanel("Save Preview", directory, fileName, "png");
 
-        if (newPath != null)
+        if (!string.IsNullOrEmpty(newPath) ) 
         {
             var newFile = new FileInfo(newPath);
             using (var writer = newFile.OpenWrite())
